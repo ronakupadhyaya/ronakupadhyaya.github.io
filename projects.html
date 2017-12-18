@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,7 +8,7 @@
   <title>Projects &ndash; Ronak Upadhyaya, Developer & Product Manager </title>
   <meta name="description" content=" Projects for Ronak Upadhyaya, a developer and product manager">
   <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="styles/stylesheet.css">
+  <link rel="stylesheet" href="../styles/stylesheet.css">
 
 
   <link rel="icon" type="image/png" sizes="32x32" href="images/dist/favicon-32x32.png">
@@ -124,11 +123,11 @@
       </symbol>
     </defs>
   </svg>
-  <link rel="stylesheet" type="text/css" href="styles/normalize.css" />
-  <link rel="stylesheet" href="styles/stylesheet.css">
-  <link rel="stylesheet" type="text/css" href="styles/demo.css" />
-  <link rel="stylesheet" type="text/css" href="styles/trail.css" />
-  <link rel="stylesheet" href="styles/animate.css">
+  <link rel="stylesheet" type="text/css" href="../styles/normalize.css" />
+  <link rel="stylesheet" href="../styles/stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="../styles/demo.css" />
+  <link rel="stylesheet" type="text/css" href="../styles/trail.css" />
+  <link rel="stylesheet" href="../styles/animate.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
@@ -140,92 +139,110 @@
       <div class="db dtc-ns v-mid w-100 w-25-ns tc tl-ns">
         <a class="black link pv2 dib pv0-ns" href="projects.html" title="Home">
           <h2 class="word word--trail2 f7 f7-ns b dib">
-            <span class="ml3 fr w3" style="float:right"><img src="images/ronak.png" width='15%' alt="Ronak"/><span>
+            <span class="ml3 fr w3" style="float:right"><img src="./images/ronak.png" width='15%' alt="Ronak"/><span>
           </h2>
         </a>
       </div>
       <div class="dtc-ns v-mid w-100 w-75-ns tc tr-ns mt2 mt0-ns">
-        <a href="projects.html" class=" link hover-black gray b f6 f7-ns dib  mr4 mr5-ns " title="Projects">
+        <a href="projects.html" class="active link hover-black gray b f6 f7-ns dib  mr4 mr5-ns " title="Projects">
           Projects
         </a>
-        <a href="about.html" class="active link hover-black gray b f6 f7-ns dib  " title="about me">
+        <a href="about.html" class=" link hover-black gray b f6 f7-ns dib  " title="about me">
           About me
         </a>
+
       </div>
     </nav>
-    <div class="mw8 center pv3 pv5-ns ph4 ph0-l tc black">
-      <!-- <img src="images/ronak.png" width="22%"> -->
-      <h1 class="f2-m f1-l serif fw-9 black lh-title mb1">Hey, it's Ronak!</h1>
+    <div class="mw8-m mw9-l center flex flex-column flex-row-ns justify-around flex-wrap pv3 pv5-ns ph3 ph4-l">
+      <div class="w-100 w-50-m w-third-l pa4 mb3 mb4-ns project-item">
+        <div class="relative tc">
+          <a href="./clearbrain/index.html" class="db relative z-1 br1 shadow-6 shadow-hover dib grow project-image">
+            <img src="./images/clearbrain.png" class="db lazyload" alt="Clearbrain">
+          </a>
+          <div class="absolute bg-gradient br2 w-100 h-100 z-0 top-0 left-0" style="background-image: linear-gradient(0deg, #FF903E 0%, #F5B22E 100%);"></div>
+        </div>
+        <h2 class="f4 normal mt4">Clearbrain</h2>
+        <p class="lh-copy mid-gray">Website design/development for an exciting new machine learning start-up</p>
+        <a class="link blue f8 b db mt3 link-arrow ttu tracked" href="clearbrain/index.html">View the Project</a>
+      </div>
+
+      <div class="w-100 w-50-m w-third-l pa4 mb3 mb4-ns project-item">
+        <div class="relative tc">
+          <a href="pocketmedic/index.html" class="db relative z-1 br1 shadow-6 shadow-hover dib grow project-image">
+            <img src="./images/sum.png" class="db lazyload" alt="Usfolk">
+          </a>
+          <div class="absolute bg-gradient br2 w-100 h-100 z-0 top-0 left-0" style="background-image: linear-gradient(0deg, #F848A9 0%, #FD90BB 100%);"></div>
+        </div>
+        <h2 class="f4 normal mt4">Pocket Medic</h2>
+        <p class="lh-copy mid-gray">Bot interaction redesign to transform a universally painful medical experience into a streamlined process</p>
+        <a class="link blue f8 b db mt3 link-arrow ttu tracked" href="pocketmedic/index.html">View the Project</a>
+      </div>
+
+      <div class="w-100 w-50-m w-third-l pa4 mb3 mb4-ns project-item">
+        <div class="relative tc">
+          <a href="mercury/index.html" class="db relative z-1 br1 shadow-6 shadow-hover dib grow project-image">
+            <img src="./images/mercury.png" class="db lazyload" alt="Trying to work">
+          </a>
+          <div class="absolute bg-gradient br2 w-100 h-100 z-0 top-0 left-0" style="background-image: linear-gradient(0deg, #34D4C1 0%, #28FABE 100%);"></div>
+        </div>
+        <h2 class="f4 normal mt4">Mercury</h2>
+        <p class="lh-copy mid-gray">Sinatra-inspired web framework for building website applications and APIs </p>
+        <a class="link blue f8 b db mt3 link-arrow ttu tracked" href="mercury/index.html">View the Project</a>
+      </div>
+
+      <div class="w-100 w-50-m w-third-l pa4 mb3 mb4-ns project-item">
+        <div class="relative tc">
+          <a href="plug/index.html" class="db relative z-1 br1 shadow-6 shadow-hover dib grow project-image">
+            <img src="./images/horizons.png" style="height: 186.02px; width: 284.39px;" class="db lazyload" alt="Little Steps">
+          </a>
+          <div class="absolute bg-gradient br2 w-100 h-100 z-0 top-0 left-0" style="background-image: linear-gradient(0deg, #852CAE 0%, #E643EC 100%);"></div>
+        </div>
+        <h2 class="f4 normal mt4">Plug</h2>
+        <p class="lh-copy mid-gray">Product design at Horizons School of Technology</p>
+        <a class="link blue f8 b db mt3 link-arrow ttu tracked" href="plug/index.html">View the Project</a>
+      </div>
+      <div class="w-100 w-50-m w-third-l pa4 mb3 mb4-ns project-item">
+        <div class="relative tc">
+          <a href="sygnal/index.html" class="db relative z-1 br1 shadow-6 shadow-hover dib grow project-image">
+            <img src="./images/angelhack.jpg" style="height: 184.4px" class="db lazyload" alt="Orca Money">
+          </a>
+          <div class="absolute bg-gradient br2 w-100 h-100 z-0 top-0 left-0" style="background-image: linear-gradient(0deg, #2C5BE2 0%, #5A82FF 100%);"></div>
+        </div>
+        <h2 class="f4 normal mt4">Sygnal</h2>
+        <p class="lh-copy mid-gray">Website design/development at AngelHack Global Hackathon Series: Silicon Valley</p>
+        <a class="link blue f8 b db mt3 link-arrow ttu tracked" href="sygnal/index.html">View the Project</a>
+      </div>
+      <div class="w-100 w-50-m w-third-l pa4 mb3 mb4-ns project-item">
+        <div class="relative tc">
+          <a href="notebook/index.html" class="db relative z-1 br1 shadow-6 shadow-hover dib grow project-image">
+            <img src="./images/notebook.png" class="db lazyload" alt="Daily UI Challenge">
+          </a>
+          <div class="absolute bg-gradient br2 w-100 h-100 z-0 top-0 left-0" style="background-image: linear-gradient(0deg, #4EE1E8 0%, #8FFCF0 100%);"></div>
+        </div>
+        <h2 class="f4 normal mt4">Notebook</h2>
+        <p class="lh-copy mid-gray">Electron side-project to practice creativity and become a better developer
+        </p>
+        <a class="link blue f8 b db mt3 link-arrow ttu tracked" href="notebook/index.html">View the Project</a>
+      </div>
     </div>
-    <div class="mw7 center pv3 pv4-m pv5-l ph4 ph0-l">
-      <section class="cf mb3 mb5-ns f6 f5-ns">
-        <div class="fl w-100 w-30-ns">
-          <h3 class="lh-copy-xl-ns mb3 mb0-ns f8 gray ttu tracked ma0">Who?</h3>
-        </div>
-        <div class="fl w-100 w-70-ns">
-          <p class="mt0 lh-copy-lg">
-            I am a product manager & developer passionate about the crossover of technology, design and entrepreneurship.
-            Currently, I’m a sophomore studying Computer Science and Business Administration at the University of Southern California. I work hard to combine my passions for technology and entrepreneurship to devise unique digital offerings that people can love.
-          </div>
-        </section>
-        <section class="cf mb3 mb5-ns f6 f5-ns">
-          <div class="fl w-100 w-30-ns">
-            <h3 class="lh-copy-xl-ns mb3 mb0-ns f8 gray ttu tracked ma0">Why?</h3>
-          </div>
-          <div class="fl w-100 w-70-ns">
-            <p class="mt0 lh-copy-lg">
-              Soccer and working out are my favorite ways of connecting with people. As a people person who is passionate about the crossover of technology and design, I hope to create those like-wise meaningful experiences for others through my design and implementation! Seeing strangers getting connected is always the most rewarding to me :)</p>
-            </div>
-          </section>
-          <section class="flex flex-column flex-row-ns mb3 mb5-ns">
-            <div class="w-100 w-30-ns">
-              <h3 class="f8 gray ttu tracked ma0 mb3 mb0-ns lh-copy-ns">Interests</h3>
-            </div>
-            <div class="w-100 w-70-ns">
-              <div class="flex flex-column flex-row-l">
-                <div class="w-100 w-50-l">
-                  <ul class="list pl0 ma0 f6 f5-ns">
-                    <li class="mb3">UI/UX</li>
-                    <li class="mb3">Product Management</li>
-                  </ul>
-                </div>
-                <div class="w-100 w-50-l pl4-l">
-                  <ul class="list pl0 ma0 f6 f5-ns">
-                    <li class="mb3">Web Development</li>
-                    <li class="mb3">Deep Learning</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </section>
 
-          <section class="cf mb3 f6 f5-ns">
-            <div class="fl w-100 w-30-ns">
-              <h3 class="lh-copy-xl-ns mb3 mb0-ns f8 gray ttu tracked ma0">Contact</h3>
-            </div>
-            <div class="fl w-100 w-70-ns">
-              <p class="mt0 lh-copy-lg">Drop me a line <a class="link underline-hover blue hover-blue active-black" href="mailto:rdupadhy@usc.edu?subject=Hey%20Ronak">rdupadhy@usc.edu</a> or find me on <a class="link underline-hover blue hover-blue active-black" href="https://www.linkedin.com/in/ronak-upadhyaya-374b40123/">Linkedin</a>.</p>
-            </div>
-          </section>
-        </div>
-        <div class="center pv3 pv4-ns tc mb4-ns">
-          <a href="https://github.com/ronakupadhyaya" target="_blank"><i class="fa fa-github fa-lg" aria-hidden="true" style="margin-right:10px; color:black;"></i></a>
-          <a href="https://www.linkedin.com/in/ronak-upadhyaya-374b40123/" target="_blank"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true" style="margin-right:10px; color:black;"></i></a>
-          <a href="https://twitter.com/R7101998" target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true" style="margin-right:10px; color:black;"></i></a>
-          <a href="mailto:rdupadhy@usc.edu?subject=Hey%20Ronak" target="_blank"><i class="fa fa-envelope fa-lg" aria-hidden="true" style="margin-right:10px; color:black;"></i></a>
-
-          <p class=" ttu tracked b gray f8 link">©RONAK UPADHYAYA 2017 </p>
-        </div>
-      </main>
-      <script>/* <![CDATA[ */(function(d,s,a,i,j,r,l,m,t){try{l=d.getElementsByTagName('a');t=d.createElement('textarea');for(i=0;l.length-i;i++){try{a=l[i].href;s=a.indexOf('/cdn-cgi/l/email-protection');m=a.length;if(a&&s>-1&&m>28){j=28+s;s='';if(j<m){r='0x'+a.substr(j,2)|0;for(j+=2;j<m&&a.charAt(j)!='X';j+=2)s+='%'+('0'+('0x'+a.substr(j,2)^r).toString(16)).slice(-2);j++;s=decodeURIComponent(s)+a.substr(j,m-j)}t.innerHTML=s.replace(/</g,'&lt;').replace(/\>/g,'&gt;');l[i].href='mailto:'+t.value}}catch(e){}}}catch(e){}})(document);/* ]]> */</script></body>
+    <div class="center pv3 pv4-ns tc mb4-ns">
+      <a href="https://github.com/ronakupadhyaya" target="_blank"><i class="fa fa-github fa-lg" aria-hidden="true" style="margin-right:10px; color:black;"></i></a>
+      <a href="https://www.linkedin.com/in/ronak-upadhyaya-374b40123/" target="_blank"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true" style="margin-right:10px; color:black;"></i></a>
+      <a href="https://twitter.com/R7101998" target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true" style="margin-right:10px; color:black;"></i></a>
+      <a href="mailto:rdupadhy@usc.edu?subject=Hey%20Ronak" target="_blank"><i class="fa fa-envelope fa-lg" aria-hidden="true" style="margin-right:10px; color:black;"></i></a>
+      <p class=" ttu tracked b gray f8 link">©RONAK UPADHYAYA 2017 </p>
+    </div>
+  </main>
+</body>
 
 
-      <script async defer src="js/dist/vendor.js"></script>
-      <!-- <script async defer src="../js/dist/main.js"></script> -->
-      <script async defer src="js/dist/vendor.js"></script>
-      <script async defer src="js/dist/main.js"></script>
-      <script src="js/charming.min.js"></script>
-      <script src="js/anime.min.js"></script>
-      <script src="js/demo.js"></script>
-      <script src="js/demo6.js"></script>
-      </html>
+<script async defer src="../js/dist/vendor.js"></script>
+<!-- <script async defer src="../js/dist/main.js"></script> -->
+<script async defer src="../js/dist/vendor.js"></script>
+<script async defer src="../js/dist/main.js"></script>
+<script src="../js/charming.min.js"></script>
+<script src="../js/anime.min.js"></script>
+<script src="../js/demo.js"></script>
+<script src="../js/demo6.js"></script>
+</html>
