@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ronak Upadhyaya</title>
+  <style>
+  * {
+    font-family:'Alegreya Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  </style>
+</head>
+<body>
+  <div style="display:flex;flex-direction:column;margin:auto;width:50%">
+    <div style="display:flex;flex-direction:row;font-size:14px;justify-content:space-between;">
+      <div>
+          <p>
+            <a href="../index.html" style="text-decoration: none; color:#2f2f2f">Ronak Upadhyaya</a>
+          </p>
+      </div>
+      <ul style="display:flex;list-style-type:none">
+        <li><a href="../index.html" style="margin-left:10px;margin-right:10px;text-decoration:none;color:#2f2f2f">About</a></li>
+        <li><a href="../writing.html" style="margin-left:10px;margin-right:10px;text-decoration:none;color:#2f2f2f">Writing</a></li>
+        <li><a href="../reading.html" style="margin-left:10px;margin-right:10px;text-decoration:none;color:#2f2f2f">Reading</a></li>
+        <li><a href="../interests.html" style="margin-left:10px;margin-right:10px;text-decoration:none;color:#2f2f2f">Interests</a></li>
+      </ul>
+    </div>
+    <div style="display:flex;flex-direction:column;margin-bottom:40px">
+      <div style="margin-top:40px;font-weight:bold;font-size:25px">
+          KARPATHY AND THE NEW EMPIRICIST
+      </div>
+      <div style="font-size:16px;margin-top:20px;line-height:1.7;color:#2f2f2f">
+        Francis Bacon argued in the <em><a href="https://www.amazon.com/Novum-Organum-Francis-Bacon/dp/1976312051" target="_blank">Novum Organum</a></em> that knowledge advances not through deduction from first principles but through direct, systematic engagement with nature. The experimenter occupies a privileged position in this account. To observe, to measure, to revise one's hypothesis in light of what the data reveals constitutes a mode of inquiry that much of technical work has organized itself around for four centuries.
+      </div>
+      <div style="font-size:16px;margin-top:20px;line-height:1.7;color:#2f2f2f">
+        Andrej Karpathy's <a href="https://github.com/karpathy/autoresearch" target="_blank">autoresearch</a> suggests that this premise warrants revision.
+      </div>
+      <div style="margin-top:20px;margin-left:auto;margin-right:auto;width:100%;max-width:550px;">
+        <blockquote class="twitter-tweet" data-dnt="true">
+          <p>Karpathy describing autoresearch: an agent that autonomously runs experiments on a small transformer model, iterating through hypotheses and code changes over hundreds of trials to improve performance.</p>
+          &mdash; Andrej Karpathy
+          <a href="https://twitter.com/karpathy/status/2031135152349524125">View on X</a>
+        </blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+      <div style="margin-top:30px;font-size:20px;font-weight:bold;">
+        Concept Space, Not Parameter Space
+      </div>
+      <div style="font-size:16px;margin-top:20px;line-height:1.7;color:#2f2f2f">
+        The instinct is to file autoresearch alongside Bayesian optimization and neural architecture search, tools that automate hyperparameter sweeps. Karpathy himself pushed back on this reading. Neural architecture search, he wrote, is "such a weak version of this that it's in its own category of totally useless by comparison."
+      </div>
+      <div style="font-size:16px;margin-top:20px;line-height:1.7;color:#2f2f2f">
+        AutoML methods traverse a predefined parameter grid. The agent in autoresearch reads code, forms a hypothesis about why loss is high, modifies the implementation, observes the result, and uses that observation to decide what to try next. The search is not over numerical values but over conceptual possibilities, ideas about what might be wrong and how to fix it.
+      </div>
+      <div style="font-size:16px;margin-top:20px;line-height:1.7;color:#2f2f2f">
+        The five-minute wall-clock budget makes this tractable. It keeps the feedback loop tight enough for the agent to iterate at the rate of hypothesis generation rather than waiting for full training convergence. The agent gets a fast, noisy signal, decides whether to keep or discard the change, and moves on. Over two days, this rhythm produced 700 experiments. Not 700 random samples from a grid, but 700 sequential acts of interpretation and response.
+      </div>
+      <div style="margin-top:30px;font-size:20px;font-weight:bold;">
+        The Experiment-Running Machine
+      </div>
+      <div style="font-size:16px;margin-top:20px;line-height:1.7;color:#2f2f2f">
+        The gap between what the agent found and what Karpathy contributed is instructive. Karpathy chose validation bits per byte as the metric and set the five-minute budget. To give the agent a tractable space to explore, he designed nanochat around a single complexity dial, the depth of the transformer, from which all other hyperparameters derive. He constrained the workflow to a branch-based structure where failures were reversible. Each of these decisions required domain understanding, taste, and strategic judgment. That is, Karpathy designed the experiment-running machine and the agent ran the experiments.
+      </div>
+      <div style="font-size:16px;margin-top:20px;line-height:1.7;color:#2f2f2f">
+        This decomposition of intellectual work is both specific and replicable. On one side sits everything that can be structured as a tight feedback loop with measurable outcomes. On the other sits the work of deciding what to optimize, how to measure it, what the search space should look like, and what constraints to impose.
+      </div>
+      <div style="margin-top:30px;font-size:20px;font-weight:bold;">
+        Five Minutes and a Score
+      </div>
+      <div style="font-size:16px;margin-top:20px;line-height:1.7;color:#2f2f2f">
+        The pattern generalizes wherever someone can build the equivalent of a five-minute training run with an unambiguous evaluation signal.
+      </div>
+      <div style="font-size:16px;margin-top:20px;line-height:1.7;color:#2f2f2f">
+        A/B testing for marketing copy already has this structure. When a visitor lands on a page, the outcome is immediate and binary, as they either convert or don't. The metric is straightforward, and while the space of possible copy variations is vast, it remains searchable.
+      </div>
+      <div style="font-size:16px;margin-top:20px;line-height:1.7;color:#2f2f2f">
+        Drug candidate screening fits the same template. Instead of waiting for clinical results, one can run simulations or binding assays that return results rather quickly. The metric becomes predicted affinity rather than conversion rate, and the search space shifts from headline variations to molecular modifications.
+      </div>
+      <div style="font-size:16px;margin-top:20px;line-height:1.7;color:#2f2f2f">
+        In both cases, the underlying architecture is identical, with rapid iteration, clear scoring, and systematic exploration. The human sets the objective, and the agent explores the space.
+      </div>
+      <div style="margin-top:30px;font-size:20px;font-weight:bold;">
+        Bacon, Inverted
+      </div>
+      <div style="font-size:16px;margin-top:20px;line-height:1.7;color:#2f2f2f">
+        For much of the history of technical work, the experimenter's advantage was access to the trial itself. The person who could run the experiment, observe the result, and revise the hypothesis occupied a position that reasoning alone could not substitute. What autoresearch demonstrates is that the trial-running is becoming automatable, and with it the cognitive style that empiricism has long elevated. The new empiricist does not run the experiment. The new empiricist decides what question the experiment should answer, and builds the machine that answers it.
+      </div>
+    </div>
+  </div>
+</body>
+</html>

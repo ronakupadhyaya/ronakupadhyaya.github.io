@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ronak Upadhyaya</title>
+  <style>
+  * {
+    font-family:'Alegreya Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  </style>
+</head>
+<body>
+  <div style="display:flex;flex-direction:column;margin:auto;width:50%">
+    <div style="display:flex;flex-direction:row;font-size:14px;justify-content:space-between;">
+      <div>
+          <p>
+            <a href="../index.html" style="text-decoration: none; color:#2f2f2f">Ronak Upadhyaya</a>
+          </p>
+      </div>
+      <ul style="display:flex;list-style-type:none">
+        <li><a href="../index.html" style="margin-left:10px;margin-right:10px;text-decoration:none;color:#2f2f2f">About</a></li>
+        <li><a href="../writing.html" style="margin-left:10px;margin-right:10px;text-decoration:none;color:#2f2f2f">Writing</a></li>
+        <li><a href="../reading.html" style="margin-left:10px;margin-right:10px;text-decoration:none;color:#2f2f2f">Reading</a></li>
+        <li><a href="../interests.html" style="margin-left:10px;margin-right:10px;text-decoration:none;color:#2f2f2f">Interests</a></li>
+      </ul>
+    </div>
+    <div style="display:flex;flex-direction:column;margin-bottom:40px">
+      <div style="margin-top:40px;font-weight:bold;font-size:25px">
+          THE ANATOMY OF SOFTWARE
+      </div>
+      <div style="font-size:16px;margin-top:20px;line-height:1.7;color:#2f2f2f">
+        Edsger Dijkstra once remarked that "computer science is no more about computers than astronomy is about telescopes." The observation invites a deeper question. If software is not fundamentally about computers, then what is it about? Understanding this requires finding what remains constant across contexts, the invariant structure beneath superficial variation.
+      </div>
+      <div style="margin-top:20px;margin-left:auto;margin-right:auto;">
+        <img style="margin:auto;height:300px;" src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Edsger_Wybe_Dijkstra.jpg" />
+        <figcaption style="text-align:center;font-size:14px;line-height:1.7;color:#2f2f2f">Edsger Dijkstra</figcaption>
+      </div>
+      <div style="font-size:16px;margin-top:20px;line-height:1.7;color:#2f2f2f">
+        Consider three seemingly unrelated situations. A procurement manager at a manufacturing company realizes that suppliers are shipping parts to the wrong warehouse, causing production delays. A doctor needs to track which patients are overdue for follow-up appointments but has no systematic way to surface this information. A teenager wants to discover new music that matches her taste but finds herself overwhelmed by the sheer volume of available songs. In each case, someone perceives a gap between how things are and how they want them to be, and lacks an efficient means to close it.
+      </div>
+      <div style="font-size:16px;margin-top:20px;line-height:1.7;color:#2f2f2f">
+        Software, at its root, is what mediates the closing of that gap. Before we can understand what software is, we need to understand the structure of the world it operates on and the nature of the problems it solves.
+      </div>
+      <div style="margin-top:30px;font-size:20px;font-weight:bold;">
+        What the World Contains
+      </div>
+      <div style="font-size:16px;margin-top:20px;line-height:1.7;color:#2f2f2f">
+        The world that software addresses is composed of things that persist through time. A hospital contains patients. A logistics company manages shipments. A music streaming service catalogs songs. These persistent things are what we might call entities, and each one bears certain attributes that describe its current state. A patient has a blood pressure reading, an assigned physician, and a set of active medications. A shipment has a weight, a current location, and a delivery status. A song has a tempo, a key, and a duration.
+      </div>
+      <div style="font-size:16px;margin-top:20px;line-height:1.7;color:#2f2f2f">
+        Entities do not exist in isolation. They stand in definite relationships to one another. A patient is treated by a physician. A shipment belongs to an order. A song appears on an album. These relationships give structure to the domain, creating a web of connections that software must respect if it is to model reality faithfully.
+      </div>
+      <div style="font-size:16px;margin-top:20px;line-height:1.7;color:#2f2f2f">
+        But entities are not static. They participate in processes, temporally extended sequences through which their attributes change according to certain rules. A patient moves through triage, diagnosis, treatment, and discharge. A shipment progresses through packing, dispatch, transit, and delivery. A song accumulates plays, gets added to playlists, and influences recommendation algorithms.
+      </div>
+      <div style="margin-top:30px;font-size:20px;font-weight:bold;">
+        The Structure of Action
+      </div>
+      <div style="font-size:16px;margin-top:20px;line-height:1.7;color:#2f2f2f">
+        Humans do not encounter this world neutrally. They encounter it through the lens of what they are trying to accomplish. The procurement manager does not simply observe that parts are being shipped to the wrong warehouse. He experiences this as a problem that needs solving. The doctor does not merely know that some patients are overdue for appointments. She feels the pressure of ensuring continuity of care. The teenager does not passively consume whatever songs are presented to her. She actively seeks music that resonates with her evolving taste.
+      </div>
+      <div style="font-size:16px;margin-top:20px;line-height:1.7;color:#2f2f2f">
+        In each case, action unfolds through the same sequence. First, the person must perceive the current state of affairs. The procurement manager reviews shipping records and discovers the misrouting pattern. Second, he must evaluate the situation, determining both what the ideal state would look like and how the current state deviates from it. Third, he must intervene, taking steps to redirect future shipments and establishing new routing protocols to prevent recurrence.
+      </div>
+      <div style="margin-top:30px;font-size:20px;font-weight:bold;">
+        The Computational Translation
+      </div>
+      <div style="font-size:16px;margin-top:20px;line-height:1.7;color:#2f2f2f">
+        Software enters the picture when this cycle can be made more efficient through automation. To do so, it must translate the world into a computational medium. This translation has two components. First, software must represent entities, their attributes, and their relationships in some formal structure. This might take the form of database tables with rows and columns, object models with classes and properties, or graph structures with nodes and edges. Second, software must encode the rules by which these entities change. These rules appear as algorithms, conditional logic, workflow definitions, or state machines.
+      </div>
+      <div style="margin-top:30px;font-size:20px;font-weight:bold;">
+        Two Dimensions of Variation
+      </div>
+      <div style="font-size:16px;margin-top:20px;line-height:1.7;color:#2f2f2f">
+        Once we recognize that software translates entities and processes into computational form, the diversity of software products becomes comprehensible. They vary along two fundamental dimensions.
+      </div>
+      <div style="font-size:16px;margin-top:20px;line-height:1.7;color:#2f2f2f">  
+        The first is how much of the world they attempt to capture. Consider two products that both address the same underlying need, tracking things that matter to you. A simple to-do list application represents tasks as entities with a handful of attributes like description, due date, and completion status. Conversely, a project management platform like Asana, serving the same fundamental job, represents not just tasks but projects, teams, dependencies, milestones, resources, and complex workflows connecting them. The distance between these products is not a difference in the job they perform but in the breadth of reality they model.
+      </div>
+      <div style="font-size:16px;margin-top:20px;line-height:1.7;color:#2f2f2f">
+        The second is how much transformation logic the software encodes. Again, consider products serving the same underlying purpose, helping people make investment decisions. A financial news website presents market data and company information but performs almost no automated processing. It captures entities but not processes. A quantitative hedge fund's trading system, addressing the same fundamental need, ingests market data in real time, evaluates positions against sophisticated risk models, executes trades autonomously across dozens of exchanges, and continuously rebalances portfolios. The logic it encodes is extraordinarily deep, reflecting years of accumulated trading knowledge and regulatory constraints.
+      </div>
+      <div style="margin-top:30px;font-size:20px;font-weight:bold;">
+        Software That Creates Its Own World
+      </div>
+      <div style="font-size:16px;margin-top:20px;line-height:1.7;color:#2f2f2f">
+        The examples considered so far share a common feature. Shipments, patients, and songs all exist independently of the software that tracks them. However, not all software operates this way.
+      </div>
+      <div style="font-size:16px;margin-top:20px;line-height:1.7;color:#2f2f2f">
+        Consider Instagram, where user profiles, follower relationships, posts, likes, and comments do not exist before the software creates them. A follower relationship, crucially asymmetric in a way that real-world friendship is not, derives much of its meaning from the platform’s design. The processes that govern how content spreads, including the feed algorithm that surfaces certain posts over others, the notification system that re-engages users, and the viral dynamics that amplify popular content, are themselves artifacts of the software. Instagram does not represent a pre-existing domain; it constitutes one.
+      </div>
+      <div style="font-size:16px;margin-top:20px;line-height:1.7;color:#2f2f2f">
+        Yet, even this invented world must be grounded in something real about human behavior. The asymmetric follower relationship succeeds precisely because it captures a genuine social dynamic. The substrate might be invented, but it must resonate with human desires.
+      </div>
+      <div style="font-size:16px;margin-top:20px;line-height:1.7;color:#2f2f2f">
+        The substrate varies, but the structure endures. Each system defines entities, represents their attributes and relationships, and encodes the processes through which they change. What differs is whether the substrate is found or made.
+      </div>
+      <div style="font-size:16px;margin-top:20px;line-height:1.7;color:#2f2f2f">
+        Understanding this anatomy matters because it reveals what is invariant across contexts. The question "what is software" turns out to have a precise answer. It is the medium through which purposive beings extend their capacity to perceive, evaluate, and transform the world they inhabit.
+      </div>
+    </div>
+  </div>
+</body>
+</html>
