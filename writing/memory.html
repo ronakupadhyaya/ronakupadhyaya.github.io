@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ronak Upadhyaya</title>
+  <style>
+  * {
+    font-family:'Alegreya Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  </style>
+</head>
+<body>
+  <div style="display:flex;flex-direction:column;margin:auto;width:50%">
+    <div style="display:flex;flex-direction:row;font-size:14px;justify-content:space-between;">
+      <div>
+          <p>
+            <a href="../index.html" style="text-decoration: none; color:#2f2f2f">Ronak Upadhyaya</a>
+          </p>
+      </div>
+      <ul style="display:flex;list-style-type:none">
+        <li><a href="../index.html" style="margin-left:10px;margin-right:10px;text-decoration:none;color:#2f2f2f">About</a></li>
+        <li><a href="../writing.html" style="margin-left:10px;margin-right:10px;text-decoration:none;color:#2f2f2f">Writing</a></li>
+        <li><a href="../reading.html" style="margin-left:10px;margin-right:10px;text-decoration:none;color:#2f2f2f">Reading</a></li>
+        <li><a href="../interests.html" style="margin-left:10px;margin-right:10px;text-decoration:none;color:#2f2f2f">Interests</a></li>
+      </ul>
+    </div>
+    <div style="display:flex;flex-direction:column;margin-bottom:40px">
+      <div style="margin-top:40px;font-weight:bold;font-size:25px">
+          THE WORLD AS MEMORY
+      </div>
+      <div style="font-size:15px;margin-top:8px;color:#666;line-height:1.5">
+          Clark, Chalmers, and the architecture of agents
+      </div>
+      <div style="font-size:16px;margin-top:20px;line-height:1.7;color:#2f2f2f">
+        In their 1998 paper <em><a href="https://en.wikipedia.org/wiki/Extended_mind_thesis" target="_blank">The Extended Mind</a></em>, Andy Clark and David Chalmers argued that cognitive processes are not confined to what happens inside the brain. Their central example was Otto, a man with memory loss who records information in a notebook he consults as naturally as someone else might consult their memory. The notebook, they claimed, is not an aid to cognition but a component of it, and the boundary of the mind extends into the world wherever external resources are reliably integrated into cognitive processing.
+      </div>
+
+      <div style="text-align:center; margin-top:30px;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Douris_Man_with_wax_tablet.jpg"
+            style="width:40%; height:auto;" />
+        <div style="font-size:13px; margin-top:8px; color:#999; font-style:italic;">
+          Douris School Cup
+        </div>
+      </div>
+
+      <div style="font-size:16px;margin-top:20px;line-height:1.7;color:#2f2f2f">
+        The thesis was contentious in philosophy. In agent architecture, it has become engineering reality, a conceptual leap from a philosophical provocation to a deployable design principle. Coding agents like Claude Code and Codex operate against persistent state that already exists in the world, exploiting the structure of codebases, filesystems, and version histories rather than attempting to reconstruct them internally.
+      </div>
+
+      <div style="margin-top:30px;font-size:20px;font-weight:bold;">
+          Otto's Notebook at Scale
+      </div>
+      <div style="font-size:16px;margin-top:20px;line-height:1.7;color:#2f2f2f">
+        When a coding agent operates on a repository, it reads files when it needs to understand a function, consults version history when it needs to trace a change, and runs tests when it needs to verify behavior. The codebase on disk serves as memory, version control as history, and the terminal as feedback loop, each component of the development environment providing what the agent would otherwise need to maintain internally. The agent does not reconstruct the repository inside its context window. It extends its cognition into the repository directly.
+      </div>
+      <div style="font-size:16px;margin-top:20px;line-height:1.7;color:#2f2f2f">
+        This is Otto's notebook scaled to software development. The repository is reliably available through file operations, automatically endorsed as the source of truth, and established through a development process whose trustworthiness is encoded in code reviews, test suites, and commit messages. The information that it contains was written and validated by the people who understood the domain, and the agent consults it as naturally as a developer with perfect recall would consult their own memory.
+      </div>
+      <div style="font-size:16px;margin-top:20px;line-height:1.7;color:#2f2f2f">
+        The external state carries structure that the agent did not have to create. A codebase has directory hierarchies, import relationships, test coverage, and commit histories that encode not merely what the code does but why it was written that way, what alternatives were considered, and how the system has evolved over time. This accumulated structure does not need to be extracted and fed to the agent. It is already there, already organized, already accessible through the interfaces the development environment provides.
+      </div>
+
+      <div style="margin-top:30px;font-size:20px;font-weight:bold;">
+          The Domain as Notebook
+      </div>
+      <div style="font-size:16px;margin-top:20px;line-height:1.7;color:#2f2f2f">
+        The same architecture extends wherever persistent artifacts encode accumulated domain knowledge. Figma recently opened its canvas to agents, allowing them to read and write directly to design files using the team's existing components, variables, and layout conventions. The design file becomes the agent's cognitive substrate in the same way the repository serves the coding agent. Component libraries encode which patterns the team has standardized, spacing tokens and color variables encode the visual language, and layout patterns across existing screens encode compositional preferences that no style guide fully captures. The agent that reads a design system is not starting from a blank canvas but from the distilled judgment of every designer who contributed to the system.
+      </div>
+      <div style="font-size:16px;margin-top:20px;line-height:1.7;color:#2f2f2f">
+        The pattern is not limited to professional tools. I recently built a personal knowledge base using Obsidian's web clipper, saving articles as markdown files over several months. The collection accumulated a structure that encoded my intellectual interests, the questions I was pursuing, and the connections between ideas I had noticed. Pointing a coding agent at this directory let it read the accumulated notes, identify thematic clusters, surface connections that I had not yet drawn, and recommend new material based on the shape of what was already there. The knowledge base was Otto's notebook in its most literal form, a personal record of what I had learned and was thinking about, made available to a system that could reason over it.
+      </div>
+
+      <div style="margin-top:30px;font-size:20px;font-weight:bold;">
+          The Boundary of the Mind
+      </div>
+      <div style="font-size:16px;margin-top:20px;line-height:1.7;color:#2f2f2f">
+        Clark and Chalmers asked where cognition ends and the rest of the world begins. Their answer was that the boundary is functional rather than spatial, extending wherever external resources are integrated into the processing that produces intelligent behavior. The agent architectures now emerging take this answer seriously at the level of engineering, extending the mind into the world rather than pulling the world into the mind.
+      </div>
+    </div>
+  </div>
+</body>
+</html>
