@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Basis and the Hidden Surface Area of Accounting — Ronak Upadhyaya</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Why accounting may be a much larger category than it appears.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ronakupadhyaya.github.io/basis.html">
+  <meta property="og:title" content="Basis and the Hidden Surface Area of Accounting">
+  <meta property="og:description" content="Why accounting may be a much larger category than it appears.">
+  <meta name="twitter:card" content="summary">
+  <style>
+  * {
+    font-family:'Alegreya Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  @media (max-width: 760px) {
+    .page { width:88% !important; }
+    .nav { flex-direction:column !important; align-items:flex-start !important; }
+    .nav p { margin:0 0 6px 0 !important; }
+    .nav ul { flex-wrap:wrap !important; margin:0 0 10px 0 !important; padding-left:0 !important; }
+    .nav ul li:first-child a { margin-left:0 !important; }
+  }
+  </style>
+</head>
+<body>
+  <div class="page" style="display:flex;flex-direction:column;margin:auto;width:50%">
+    <div class="nav" style="display:flex;flex-direction:row;font-size:14px;justify-content:space-between;">
+      <div>
+        <p>
+          <a href="index.html" style="text-decoration:none;color:#2f2f2f">Ronak Upadhyaya</a>
+        </p>
+      </div>
+      <ul style="display:flex;list-style-type:none">
+        <li><a href="index.html" style="margin-left:10px;margin-right:10px;text-decoration:none;color:#2f2f2f">About</a></li>
+        <li><a href="writing.html" style="margin-left:10px;margin-right:10px;text-decoration:none;color:#2f2f2f">Writing</a></li>
+        <li><a href="reading.html" style="margin-left:10px;margin-right:10px;text-decoration:none;color:#2f2f2f">Reading</a></li>
+        <li><a href="interests.html" style="margin-left:10px;margin-right:10px;text-decoration:none;color:#2f2f2f">Interests</a></li>
+      </ul>
+    </div>
+    <div style="display:flex;flex-direction:column;margin-bottom:40px">
+      <div style="margin-top:40px;font-weight:bold;font-size:25px">
+        BASIS AND THE HIDDEN SURFACE AREA OF ACCOUNTING
+      </div>
+      <div style="font-size:16px;margin-top:8px;line-height:1.7;color:#666">
+        Why accounting may be a much larger category than it appears
+      </div>
+      <div style="font-size:16px;margin-top:8px;line-height:1.7;color:#2f2f2f">
+        <p>
+          Before starting Basis, Matt Harpe spent several years working with healthcare companies at BCG. Somewhere along the way, he encountered a fact that bothered him. A hospital could tell you how many knee replacements it had performed, how much it had billed, and what it had paid doctors and suppliers, yet answering a seemingly basic question about how much it actually cost to perform a knee replacement could be surprisingly difficult.
+        </p>
+        <p>
+          The problem was not that the underlying information did not exist. That is, the hospital knew what it paid its employees, what medical supplies cost, how its operating rooms were used, and what happened to each patient. However, the problem was turning those facts into a coherent economic representation of the procedure, which required someone to decide what belonged where, how shared costs should be allocated, and how the resulting model should change as the underlying business changed. Harpe eventually came to see this as an accounting capacity problem. Accountants spend most of their time on work that has to happen, including closing the books, filing taxes, satisfying auditors, and producing financial statements, leaving a much larger class of potentially valuable accounting undone.<sup><a href="#ref1">1</a></sup>
+        </p>
+        <p>
+          This observation became part of the founding thesis behind Basis, which Harpe started with Mitchell Troyanovsky in 2023. Troyanovsky had approached the same problem from the opposite direction, first through financial products at Goldman Sachs and later at Puzzle, an accounting software company. He has since described accounting as a kind of intelligence over the economy, compressing the enormous volume of contracts, invoices, inventory movements, payments, and other economic events into a representation that people can reason over.<sup><a href="#ref2">2</a></sup>
+        </p>
+        <p>
+          These two ideas together explain why I find Basis more interesting than an AI accounting company. The immediate opportunity is to automate a large amount of expensive manual work, but the larger opportunity appears once the cost of producing accounting information falls far enough that the amount of accounting worth doing starts to change.
+        </p>
+        <div style="margin-top:38px;font-weight:bold;font-size:21px">
+          A PARTICULARLY GOOD WEDGE
+        </div>
+        <p>
+          At Boulay, some partnership tax returns involving 60 or 70 K-1s historically required more than 100 hours of preparation. With Basis, the firm says similar returns now take roughly 15 to 20 hours.<sup><a href="#ref3">3</a></sup> The magnitude of the improvement is striking, but the shape of the problem is more important. Accounting contains a large body of work that already has an owner, a deadline, and a budget because companies are legally or operationally required to complete it.
+        </p>
+        <p>
+          A common startup adage is to build painkillers rather than vitamins. Accounting preparation fits the metaphor unusually well because the customer does not need to be persuaded that the underlying problem matters. Companies already need to close their books, reconcile their accounts, prepare their tax returns, and complete their audits, often through workflows that recur every month or every year. Basis can therefore measure its value against work that already happens, which makes the ROI unusually legible. If something required 10 hours of preparation last month and now requires 2 hours of review, very little imagination is required to understand what the product accomplished.
+        </p>
+        <p>
+          The recurrence matters for another reason. The same company closes its books every month, while the same accounting firm performs similar workflows across hundreds of clients and returns to many of them every year. Each iteration produces more information about how that particular organization accounts, including its policies, mappings, prior treatments, reviewer preferences, templates, and recurring exceptions. Basis therefore begins with a painful workflow whose value is easy to prove, while the repeated performance of that workflow gives the product progressively richer context about the environment in which it operates.
+        </p>
+        <p>
+          The product itself has evolved in the same direction. Basis initially attacked discrete pieces of accounting work, including reconciliations and journal entries, but its newer tax product moves the abstraction higher. Instead of waiting for an accountant to assign every step, the system can take responsibility for the first pass across a return, gather missing information, prepare workpapers, perform review, and bring the accountant in when professional judgment is required.<sup><a href="#ref4">4</a></sup>
+        </p>
+        <p>
+          The distinction is more important than it initially appears. Traditional accounting software largely assumes that the human already knows what needs to happen and provides the functions required to record or execute that decision. Basis increasingly accepts the job itself.
+        </p>
+        <div style="margin-top:38px;font-weight:bold;font-size:21px">
+          FROM FUNCTIONS TO JOBS
+        </div>
+        <p>
+          Consider a bank reconciliation. Matching two identical transactions is straightforward and has been amenable to deterministic software for years. The interesting work begins with the residue, when several ledger entries correspond to one bank transaction, a payment appears twice, the amount is correct but the date differs, or money moved without the books reflecting it.
+        </p>
+        <p>
+          Resolving these discrepancies requires moving from observation to hypothesis to evidence and eventually to action. The accountant has to determine what probably happened, inspect the information that would confirm or invalidate that explanation, revise the hypothesis when the evidence disagrees, and decide whether the resolution requires a match, an adjustment, or a new journal entry. Basis increasingly takes responsibility for this loop, with agents using tools and persistent context to complete accounting workflows rather than merely recommending what an accountant should do.<sup><a href="#ref5">5</a></sup>
+        </p>
+        <p>
+          This changes the natural unit of software. A function has a largely predetermined path from input to output, while a job specifies the desired outcome and leaves some portion of the path unresolved. Accounting turns out to be unusually well suited to this kind of system because the middle of the work contains substantial ambiguity while much of its boundary remains verifiable. Entries have to balance, reconciliations have to tie, calculations can be reproduced, source evidence can be inspected, prior treatments create precedent, and firm methodology constrains the range of acceptable behavior. There is enough ambiguity to require intelligence and enough structure to determine whether much of that intelligence has gone wrong.
+        </p>
+        <p>
+          This combination may be one reason accounting is such fertile terrain for long-running agents. In many forms of knowledge work, both the path and the answer can be subjective, which makes it difficult to know whether autonomy is actually working. Accounting contains professional judgment, but that judgment exists inside a comparatively dense network of evidence, rules, invariants, and review mechanisms.
+        </p>
+        <div style="margin-top:38px;font-weight:bold;font-size:21px">
+          THE PRODUCT CHANGES WHEN THE WORK MOVES
+        </div>
+        <p>
+          The shift from functions to jobs changes the role of the accountant as well. If someone previously spent 4 hours preparing a workpaper and 30 minutes reviewing it, removing most of the 4 hours creates substantial leverage. If the same person then needs another 4 hours to reconstruct everything the agent did before trusting the result, the leverage disappears because the work has merely moved from preparation to verification.
+        </p>
+        <p>
+          The interface therefore has to evolve with the division of labor. Software designed for someone doing the work naturally helps with execution by organizing the steps, documents, calculations, and decisions required to reach the output. Conversely, software designed for someone supervising agents has a different responsibility. It should help the reviewer understand what changed, where evidence is weak, which treatment differs from precedent, and where the agent encountered a decision that deserves professional judgment.
+        </p>
+        <p>
+          Basis's work on behavior specs approaches the technical version of this problem. A correct final answer is not sufficient evidence that a long-running agent behaved correctly because the system could arrive at the right tax treatment while consulting the wrong authority, ignoring relevant evidence, or failing to escalate uncertainty. Basis therefore evaluates consequential behaviors across the trajectory rather than relying exclusively on the final output.<sup><a href="#ref6">6</a></sup>
+        </p>
+        <p>
+          The same principle can shape the product. An accountant reviewing hundreds of agent decisions should not have to inspect them uniformly. A useful review experience could instead make clear that three decisions require judgment, two differ materially from prior treatment, one rests on incomplete evidence, and the remaining work satisfied the relevant controls. The accountant could then descend into the source documents, calculations, prior precedent, and reasoning behind those exceptional cases.
+        </p>
+        <p>
+          This changes the fundamental problem that the interface is solving. The preparer needs help completing the work, while the reviewer needs help allocating attention. As agents take responsibility for progressively longer workflows, the quality of this compression may become almost as important as the capability of the agents themselves because an agent that can work independently for eight hours is only useful if the consequential parts of those eight hours can be made legible to a human in minutes.
+        </p>
+        <p>
+          Basis already seems to be moving in this direction. Its End-to-End Tax product describes review as beginning with evidence and open questions already surfaced, while its Deployed Intelligence work describes accountants moving from performing individual tasks toward directing teams of agents.<sup><a href="#ref4">4</a></sup><sup><a href="#ref7">7</a></sup> The implication is that agentic accounting does not simply automate the existing product surface. It changes what the human needs the product to do.
+        </p>
+        <div style="margin-top:38px;font-weight:bold;font-size:21px">
+          THE HIDDEN SURFACE AREA
+        </div>
+        <p>
+          The more interesting implication appears after Basis has completed the accounting work. Accounting is easy to mistake for a narrow back-office function because most people encounter its outputs rather than the process through which they are produced. A company signs a contract, sends an invoice, receives cash, hires an employee, purchases inventory, and pays a vendor. These events occur in different systems and have different operational meanings, but each eventually has to be translated into a common financial representation.
+        </p>
+        <p>
+          The ledger might say that revenue increased by $10 million, but the world that produced the number contains contracts, discounts, usage, invoices, payment terms, refunds, implementation work, and judgment about when revenue should be recognized. Accounting is useful precisely because it compresses this heterogeneity into a representation against which the rest of the company can reason.
+        </p>
+        <p>
+          This creates an interesting topology. Accounting sits downstream of nearly every economic event inside a company, which means that performing the work correctly eventually requires access to the contracts, invoices, payroll reports, bank transactions, policies, historical treatments, and exceptions that explain what happened. Much of finance then sits downstream of accounting because FP&amp;A, cash forecasting, profitability analysis, board reporting, tax planning, audit, lending, and strategic finance all depend on a trusted representation of what has already happened.
+        </p>
+        <p>
+          Basis therefore enters through a workflow with unusually obvious ROI, but doing that work forces the product to accumulate context whose value extends beyond the workflow itself. Accel hinted at this in its investment thesis when it described accounting as the common language of economic activity and argued that a platform which powers it can unlock considerably more economic value downstream.<sup><a href="#ref8">8</a></sup>
+        </p>
+        <p>
+          The product opportunities become more concrete when you follow the information. Consider customer profitability. Most companies can calculate aggregate gross margin, but far fewer maintain a trustworthy and continuously updated view of the true economics of every customer. Revenue may be relatively straightforward, while the associated costs can be distributed across implementation, support, infrastructure, sales commissions, credits, discounts, and shared resources. A finance team can reconstruct this analysis today, but maintaining it as the underlying business changes is expensive.
+        </p>
+        <p>
+          If Basis is already processing many of the contracts, transactions, accruals, payments, policies, and historical decisions required to keep the books correct, customer profitability can start to look less like a periodic analysis and more like a persistent object. The same logic applies to a product, location, project, or business unit, where the economic representation can be maintained as the underlying activity changes rather than reconstructed whenever someone decides the question is important enough to justify the work.
+        </p>
+        <p>
+          A second class of product follows from explanation. Suppose gross margin falls by three points. Traditional reporting can show the CFO that the change occurred, but a system that has participated in producing the books has a path back through the transactions and accounting decisions that produced it. Perhaps one point came from higher infrastructure costs among a particular customer cohort, another came from discounting embedded in recently signed contracts, and the remainder came from an accrual adjustment that does not represent deterioration in the underlying business.
+        </p>
+        <p>
+          The distinction is not simply between a dashboard and a better dashboard. It is between reporting the financial state and maintaining enough context to explain how the underlying economic activity produced it.
+        </p>
+        <p>
+          The same structure becomes especially interesting for accounting firms. Troyanovsky has argued that accountants deepen their client relationships by helping businesses make decisions rather than by closing the books incrementally more accurately.<sup><a href="#ref2">2</a></sup> The constraint is partly one of attention because a partner cannot continuously inspect the financial state of hundreds of clients looking for something worth discussing, even if doing so would create significant value.
+        </p>
+        <p>
+          An agent can inspect those businesses continuously. One client may be collecting cash progressively more slowly from its largest customers, another may have kept prices flat while input costs increased, and a third may be growing revenue at a new location while contribution margin deteriorates. The interesting product would not wait for the accountant or client to formulate the right question, but would identify which clients warrant attention, explain why they warrant it, and assemble the accounting evidence required for the conversation.
+        </p>
+        <p>
+          The accounting work creates the context, while the context creates a larger surface of financial work.
+        </p>
+        <div style="margin-top:38px;font-weight:bold;font-size:21px">
+          WHAT HAPPENS AFTER SCARCITY
+        </div>
+        <p>
+          This brings the argument back to the hospital. The surprising thing about Harpe's knee replacement example is not that hospitals lack sophisticated software or that the cost of a procedure is fundamentally unknowable. The surprising thing is that an organization capable of performing thousands of extraordinarily complex medical procedures can still find it uneconomical to maintain the accounting representation required to answer a basic question about what one of those procedures actually costs.
+        </p>
+        <p>
+          This is what accounting scarcity looks like. It appears not only in work that takes too many hours but also in questions that organizations stop expecting to answer because constructing and maintaining the representation required to answer them would cost too much.
+        </p>
+        <p>
+          Basis begins with the first category because there is already an enormous body of mandatory accounting work that is repetitive, expensive, and increasingly amenable to agents. This is an unusually compelling wedge because the pain already exists and the value of relieving it is immediately measurable.
+        </p>
+        <p>
+          The larger opportunity appears if the cost falls far enough to change the amount of accounting worth doing. Companies can maintain economic representations that were previously too expensive to construct, accountants can spend more time deciding what the numbers imply rather than assembling them, and accounting firms can offer insight to clients whose businesses they previously lacked the capacity to inspect continuously. The financial system can begin moving from reporting what happened toward explaining why it happened and identifying what deserves attention next.
+        </p>
+        <p>
+          This is why accounting may be a much larger category than it initially appears. Basis has found a particularly strong wedge because the first problem is painful enough to demand a solution, but the significance of the wedge comes from where accounting sits inside the company, between the economic activity of the business and the financial decisions made from it.
+        </p>
+        <p>
+          If Basis becomes the layer that understands the translation between the two, doing the books may only be the beginning.
+        </p>
+        <div style="margin-top:45px;font-weight:bold;font-size:21px">
+          REFERENCES
+        </div>
+        <ol style="font-size:14px;line-height:1.7;color:#555;padding-left:22px">
+          <li id="ref1" style="margin-bottom:10px">
+            Matt Harpe, “Why AI Won't Replace Accountants, It'll Make Them Richer,”
+            <a href="https://podscan.fm/podcasts/the-upstarts-podcast-1/episodes/basiss-matt-harpe-why-ai-wont-replace-accountants-itll-make-them-richer" target="_blank">The Upstarts Podcast</a>.
+          </li>
+          <li id="ref2" style="margin-bottom:10px">
+            Mitchell Troyanovsky on accounting as an intelligence layer over economic activity and the role of accountants in advisory work,
+            <a href="https://www.ai-in-the-am.com/episodes/2026-08-20-ai-accountants-and-the-cuda-moat/" target="_blank">AI in the AM</a>.
+          </li>
+          <li id="ref3" style="margin-bottom:10px">
+            Basis,
+            <a href="https://www.getbasis.ai/solutions/tax" target="_blank">Tax</a>,
+            including the Boulay case study on K-1 intensive partnership returns.
+          </li>
+          <li id="ref4" style="margin-bottom:10px">
+            Basis,
+            <a href="https://www.getbasis.ai/blogs/the-future-of-tax-is-end-to-end-intelligence" target="_blank">“The Future of Tax Is End-to-End Intelligence.”</a>
+          </li>
+          <li id="ref5" style="margin-bottom:10px">
+            OpenAI,
+            <a href="https://openai.com/index/basis/" target="_blank">“Basis.”</a>
+            Discussion of supervising agents, specialized subagents, tools, and frontier models for multi-step accounting workflows.
+          </li>
+          <li id="ref6" style="margin-bottom:10px">
+            Basis,
+            <a href="https://www.getbasis.ai/blogs/behavior-specs-an-open-standard-for-supervising-long-horizon-agents" target="_blank">“Behavior Specs, An Open Standard for Supervising Long-Horizon Agents.”</a>
+          </li>
+          <li id="ref7" style="margin-bottom:10px">
+            Basis,
+            <a href="https://www.getbasis.ai/blogs/introducing-deployed-intelligence" target="_blank">“Introducing Deployed Intelligence.”</a>
+          </li>
+          <li id="ref8" style="margin-bottom:10px">
+            Accel,
+            <a href="https://www.accel.com/news/beyond-the-ledger-investing-in-basis" target="_blank">“Beyond the Ledger, Investing in Basis.”</a>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
