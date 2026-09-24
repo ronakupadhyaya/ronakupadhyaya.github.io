@@ -48,7 +48,7 @@
       </div>
       <div style="font-size:16px;margin-top:8px;line-height:1.7;color:#2f2f2f">
         <p>
-          Before starting Sola, Jessica Wu spent time working across finance, where she repeatedly encountered workflows that were obviously repetitive yet surprisingly difficult to automate. Employees moved between brokerage software, spreadsheets, documents, and internal systems, carrying information from one place to another and performing many of the same actions every day. Neil Deshmukh had encountered a similar problem while working around hospital systems, where important operational work still depended on people navigating software that had never been designed to work together.<sup><a href="#ref1">1</a></sup>
+          Before starting Sola, Jessica Wu spent time working in finance, where she repeatedly encountered workflows that were obviously repetitive yet surprisingly difficult to automate. Employees moved between brokerage software, spreadsheets, documents, and internal systems, carrying information from one place to another and performing many of the same actions every day. Neil Deshmukh had encountered a similar problem while working around hospital systems, where important operational work still depended on people navigating software that had never been designed to work together.<sup><a href="#ref1">1</a></sup>
         </p>
         <p>
           This was precisely the class of problem robotic process automation was supposed to solve. RPA had an intuitively compelling thesis, namely, that the people closest to repetitive work understand it best, so they should be able to automate it themselves. However, in practice, much of the last generation of RPA moved in the opposite direction. Enterprises built centralized automation teams, hired consultants, and trained specialists to construct and maintain workflows that could be brittle when the surrounding software or inputs changed.<sup><a href="#ref2">2</a></sup>
@@ -57,16 +57,16 @@
           Sola starts from a much more natural interface. Instead of asking someone to describe a process in the language of automation, it lets them begin by doing the work. A user records herself performing a task, and Sola uses language models and computer vision to turn those actions into a reusable workflow that can be reviewed, modified, tested, and deployed.<sup><a href="#ref3">3</a></sup>
         </p>
         <p>
-          There is something unusually powerful about recording as an authoring interface. The operator does not need to first learn how an automation platform represents loops, variables, branches, or interface elements before she can begin. She already knows how to perform the job, and recording allows that existing knowledge to become the starting point for software. This makes the original citizen-developer idea considerably more literal: expertise in the business process itself becomes enough to begin automating it.
+          There is something unusually powerful about recording as an authoring interface. The operator does not need to first learn how an automation platform represents loops, variables, branches, or interface elements before she can begin. She already knows how to perform the job, and recording allows that existing knowledge to become the starting point for software. This makes the original citizen-developer idea considerably more literal, as expertise in the business process itself becomes enough to begin automating it.
         </p>
         <p>
-          These ideas together explain why I find Sola more interesting than simply a better version of RPA. The immediate opportunity is to make a large body of existing automation easier to create and maintain, but the broader opportunity appears if Sola becomes the place where companies teach software how work gets done, assemble those capabilities into processes, deploy them across the organization, and manage the resulting digital workforce.
+          These ideas together explain why I find Sola more interesting than simply a better version of RPA. The immediate opportunity is to make a large body of existing automation easier to create and maintain, but the broader opportunity appears if Sola becomes the place where companies teach software how work gets done, assemble those capabilities into processes, and deploy them across the organization.
         </p>
         <div style="margin-top:38px;font-weight:bold;font-size:21px">
-          FROM WORK TO SOFTWARE
+          THE ECONOMICS OF AUTOMATION
         </div>
         <p>
-          Ally Logistics provides a useful example. Freight brokers operate across transportation management systems (TMS), customer portals, carrier systems, financial software, PDFs, spreadsheets, and email. Many of the resulting workflows are not especially complicated, but they still require someone to move information through a fragmented software environment.
+          Ally Logistics provides a useful example. Freight brokers operate across TMS, customer portals, carrier systems, financial software, PDFs, spreadsheets, and email. Many of the resulting workflows are not especially complicated, but they still require someone to move information through a fragmented software environment.
         </p>
         <p>
           Cash application is one of them. When Ally receives money from a customer, the payment has to be matched to the corresponding shipment or invoice so that accounts receivable remains accurate. Before automating the process with Sola, Ally estimated that this work consumed roughly 5 to 10 hours of employee time each week. Using Sola, an employee could begin by recording himself performing the process in the software he already used. Sola converted the demonstration into a workflow, after which the user configured the relevant inputs, reviewed the generated steps, and tested the automation before putting it to work.<sup><a href="#ref4">4</a></sup>
@@ -80,9 +80,6 @@
         <p>
           Ally’s subsequent adoption suggests what happens when that threshold moves. Within two months, the company reported 45 active automations.<sup><a href="#ref4">4</a></sup> Five months after going live, it reported 115 active workflows and 52,481 executions in the preceding 30 days across billing, accounts receivable and payable, carrier compliance, operations, and pricing.<sup><a href="#ref5">5</a></sup> Once the organization had a sufficiently easy way to turn repetitive work into software, it kept discovering more work worth expressing through the same system.
         </p>
-        <p>
-          That pattern matters because automation has always contained an implicit economic threshold. A process consuming thousands of employee hours a year can justify substantial implementation effort. Something that takes an hour a week may never make it onto an automation roadmap, even if everyone involved agrees that a person should not have to keep doing it. Reducing the cost of creation therefore does more than make existing RPA projects cheaper. It expands the set of processes that become worth automating at all.
-        </p>
         <div style="margin-top:38px;font-weight:bold;font-size:21px">
           THE INVISIBLE ASYMPTOTE
         </div>
@@ -90,7 +87,7 @@
           Eugene Wei used the phrase <em>invisible asymptote</em> to describe the hidden ceiling that eventually limits a product’s growth if it continues along its existing path. At Amazon, one of the earliest and most important asymptotes turned out to be shipping fees. Customers liked the underlying service, but their reluctance to pay for shipping constrained how frequently they were willing to use it. Identifying that ceiling gave Amazon a concrete problem around which years of product work could be organized.<sup><a href="#ref6">6</a></sup>
         </p>
         <p>
-          Process automation has a similar constraint. There is no shortage of repetitive work that could theoretically be automated. The limitation is that every additional process carries some cost to understand, translate into software, test, and maintain. At some point, the value of automating the next process is simply smaller than the effort required to automate it.
+          Process automation has a similar constraint, since there is no shortage of repetitive work that could theoretically be automated. The limitation is that every additional process carries some cost to understand, translate into software, test, and maintain. At some point, the value of automating the next process is simply smaller than the effort required to automate it.
         </p>
         <p>
           That is the invisible asymptote Sola is pushing against.
@@ -108,7 +105,7 @@
           The asymptote is useful because it makes the product direction clearer. If the constraint is the effort required to turn the next process into reliable software, the question becomes straightforward: what would make that next process cheaper to create, easier to trust, and simpler to compose with everything that already exists?
         </p>
         <div style="margin-top:38px;font-weight:bold;font-size:21px">
-          FROM DEMONSTRATION TO INTENT
+          FROM ACTIONS TO UNDERSTANDING
         </div>
         <p>
           The first opportunity follows directly from the way Sola begins. Recording is powerful precisely because it preserves the operator’s natural relationship with the work, so the interesting product question is how much more context can be recovered without recreating the configuration burden that recording was designed to remove.
@@ -150,7 +147,7 @@
           WHAT HAPPENS AFTER AUTOMATION SCARCITY
         </div>
         <p>
-          This brings the argument back to the workflows Wu and Deshmukh encountered before Sola. The striking fact is not that finance and healthcare contain old software. Most industries do. It is that an organization can contain work everyone recognizes as repetitive, that employees perform competently every day, and that software could theoretically reproduce, yet still find it economical to leave the work manual.
+          This brings the argument back to the workflows Wu and Deshmukh encountered before Sola. What is striking is not merely that finance and healthcare still depend on old software, since that is true of most industries, but that organizations can contain large amounts of work that everyone understands to be repetitive, that employees perform reliably every day, and that software could theoretically reproduce, yet still find it economically rational to leave that work manual.
         </p>
         <p>
           This is automation scarcity. Traditional RPA reduced it for sufficiently valuable and sufficiently stable processes, but it also created an implicit economic threshold. A workflow had to consume enough labor, recur often enough, and justify enough implementation and maintenance effort to be worth turning into software. A large amount of operational work sits below that threshold.
