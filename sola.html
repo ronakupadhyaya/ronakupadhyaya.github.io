@@ -59,6 +59,7 @@
         <p>
           Together, these ideas explain why I find Sola more interesting than simply a better version of RPA. The immediate opportunity is to make a large body of existing automation easier to create and maintain, but the broader opportunity appears if Sola becomes the place where companies teach software how work gets done, assemble those capabilities into processes, and deploy them across the organization.
         </p>
+
         <div style="margin-top:38px;font-weight:bold;font-size:21px">
           THE ECONOMICS OF AUTOMATION
         </div>
@@ -74,6 +75,7 @@
         <p>
           This makes automation easier to distribute inside an organization as well. Central automation teams necessarily have finite capacity, while the employees performing operational work encounter potential automation opportunities continuously. If the marginal creator of an automation can be the person already doing the job, discovery and creation can begin to happen at the edge of the organization rather than exclusively through a centralized queue.
         </p>
+
         <div style="margin-top:38px;font-weight:bold;font-size:21px">
           THE INVISIBLE ASYMPTOTE
         </div>
@@ -81,13 +83,13 @@
           Eugene Wei used the phrase <em>invisible asymptote</em> to describe the hidden ceiling that eventually limits a product’s growth if it continues along its existing path. At Amazon, one of the earliest and most important asymptotes turned out to be shipping fees. Customers liked the underlying service, but their reluctance to pay for shipping constrained how frequently they were willing to use it. Identifying that ceiling gave Amazon a concrete problem around which years of product work could be organized.<sup><a href="#ref6">6</a></sup>
         </p>
         <p>
-          Process automation has a similar constraint, since there is no shortage of repetitive work that could theoretically be automated. The limitation is that every additional process carries some cost to understand, translate into software, test, and maintain. At some point, the value of automating the next process is simply smaller than the effort required to automate it.
+          Process automation has a similar hidden constraint: the cost of translating knowledge about how work gets done into reliable software. There is no shortage of repetitive work that could theoretically be automated, but every additional process carries some cost to understand, encode, test, and maintain. At some point, the value of automating the next process is simply smaller than the effort required to automate it.
         </p>
         <p>
-          That is the invisible asymptote Sola is pushing against.
+          That translation cost is the invisible asymptote Sola is pushing against.
         </p>
         <p>
-          The useful thought experiment is therefore to imagine what happens as that constraint approaches zero. What would automation look like if translating human work into reliable software became nearly effortless?
+          The useful thought experiment is therefore to imagine what happens as that translation cost approaches zero. What would automation look like if turning knowledge of how work gets done into reliable software became nearly effortless?
         </p>
         <p>
           In the limit, every repetitive digital process that can reasonably be delegated to software is addressable. A user demonstrates the work once and receives a useful first draft immediately. The system understands enough of what was demonstrated to require very little additional configuration, while making the remaining uncertainty easy to resolve. The time between showing Sola a process and trusting the resulting automation approaches zero.
@@ -98,6 +100,7 @@
         <p>
           The asymptote is useful because it makes the product direction clearer. If the constraint is the effort required to turn the next process into reliable software, the question becomes straightforward: what would make that next process cheaper to create, easier to trust, and simpler to compose with everything that already exists?
         </p>
+
         <div style="margin-top:38px;font-weight:bold;font-size:21px">
           FROM ACTIONS TO UNDERSTANDING
         </div>
@@ -113,8 +116,9 @@
         <p>
           Any remaining uncertainty can then be handled selectively. If Sola understands nearly all of a process but remains unsure why one record was excluded or whether a particular check should occur every time, it can ask about those moments rather than forcing the user to inspect the entire workflow. The user’s job begins to shift from building the automation toward correcting Sola’s understanding of the process.
         </p>
+
         <div style="margin-top:38px;font-weight:bold;font-size:21px">
-          FROM WORKFLOWS TO PRIMITIVES
+          FROM WORKFLOWS TO CAPABILITIES
         </div>
         <p>
           A second opportunity appears as the number of automations inside one company grows. The first few workflows can reasonably be treated as independent objects. The hundredth makes that assumption more expensive because processes inside the same organization repeatedly rely on the same systems, rules, and operational capabilities.
@@ -126,10 +130,10 @@
           If every workflow independently implements those behaviors, automation creates duplication alongside leverage. A change to the TMS can require many workflows to rediscover the same fix, while every new automation has to rebuild capabilities the organization already possesses elsewhere.
         </p>
         <p>
-          The alternative is to let repeated behavior become a shared primitive. <em>Authenticate to TMS</em>, <em>Find Load</em>, <em>Verify Carrier</em>, or <em>Post Payment</em> can begin to look less like copied pieces of individual workflows and more like reusable capabilities available across the company.
+          The alternative is to let repeated behavior become a shared capability. <em>Authenticate to TMS</em>, <em>Find Load</em>, <em>Verify Carrier</em>, or <em>Post Payment</em> can begin to look less like copied pieces of individual workflows and more like reusable capabilities available across the company.
         </p>
         <p>
-          This changes the economics of both creation and maintenance. A new automation can be assembled partly from capabilities the organization has already taught Sola, which shortens the path from demonstration to deployment. If the underlying system changes, the shared primitive could be repaired once, and the dependent workflows could inherit the improvement, provided the product can make those dependencies visible and test that the change preserves the intended behavior downstream.
+          This changes the economics of both creation and maintenance. A new automation can be assembled partly from capabilities the organization has already taught Sola, which shortens the path from demonstration to deployment. If the underlying system changes, the shared capability could be repaired once, and the dependent workflows could inherit the improvement, provided the product can make those dependencies visible and test that the change preserves the intended behavior downstream.
         </p>
         <p>
           The same logic can extend beyond mechanical interactions. A company may have a standard way to verify a carrier, interpret a particular document, reconcile a payment, approve an expense, or escalate an exception. Once represented cleanly enough, these could become part of a shared vocabulary from which future automations are composed.
@@ -137,6 +141,7 @@
         <p>
           Over time, Sola could begin to accumulate a reusable library of how the organization gets work done. Each new workflow could draw from that library while also contributing new capabilities back into it. The marginal automation becomes easier to build because more of the company’s operational knowledge already exists as software.
         </p>
+
         <div style="margin-top:38px;font-weight:bold;font-size:21px">
           WHEN AUTOMATION BECOMES THE DEFAULT
         </div>
@@ -155,6 +160,7 @@
         <p>
           The first recording may only be the beginning.
         </p>
+
         <div style="margin-top:45px;font-weight:bold;font-size:21px">
           REFERENCES
         </div>
