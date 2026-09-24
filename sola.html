@@ -48,7 +48,7 @@
       </div>
       <div style="font-size:16px;margin-top:8px;line-height:1.7;color:#2f2f2f">
         <p>
-          Before starting Sola, Jessica Wu worked in finance, where she encountered substantial manual work around an old brokerage system and found that even simple browser or desktop automation was difficult to build with existing RPA tools. Neil Deshmukh had a similar experience while building hospital systems at Massachusetts General Hospital, where the tooling was old, brittle, and difficult to implement. Wu later described the broader enterprise environment they encountered as one in which operations teams move across spreadsheets, internal portals, external systems, files, and other tools that often do not connect cleanly.<sup><a href="#ref1">1</a></sup>
+          Before starting Sola, Jessica Wu worked in finance, where she encountered substantial manual work around an old brokerage system and found that even simple automations were difficult to build with existing RPA tools. Neil Deshmukh had a similar experience while building hospital systems at Massachusetts General Hospital, where the tooling was old, brittle, and difficult to implement. Wu later described the broader enterprise environment they encountered as one in which operations teams move across spreadsheets, internal portals, external systems, files, and other tools that often do not connect cleanly.<sup><a href="#ref1">1</a></sup>
         </p>
         <p>
           This was precisely the class of problem robotic process automation was supposed to solve. RPA had an intuitively compelling thesis, namely, that the people closest to repetitive work understand it best, so they should be able to automate it themselves. However, in practice, much of the last generation of RPA moved in the opposite direction. Enterprises built centralized automation teams, hired consultants, and trained specialists to construct and maintain workflows that could be brittle when the surrounding software or inputs changed.<sup><a href="#ref2">2</a></sup>
@@ -57,10 +57,10 @@
           Sola starts from a much more natural interface. Instead of asking someone to describe a process in the language of automation, it lets them begin by doing the work. A user records herself performing a task, and Sola uses language models and computer vision to turn those actions into a functional workflow that business users can understand, modify, maintain, and deploy.<sup><a href="#ref3">3</a></sup>
         </p>
         <p>
-          There is something unusually powerful about recording as an authoring interface. The operator does not need to first learn how an automation platform represents loops, variables, branches, or interface elements before she can begin. She already knows how to perform the job, and recording allows that existing knowledge to become the starting point for software. This makes the original citizen-developer idea considerably more literal, as expertise in the business process itself becomes enough to begin automating it.
+          There is something rather powerful about recording as an authoring interface. The operator does not need to first learn how an automation platform represents loops, variables, branches, or interface elements before she can begin. She already knows how to perform the job, and recording allows that existing knowledge to become the starting point for software. This makes the original citizen-developer idea considerably more literal, as expertise in the business process itself becomes enough to begin automating it.
         </p>
         <p>
-          These ideas together explain why I find Sola more interesting than simply a better version of RPA. The immediate opportunity is to make a large body of existing automation easier to create and maintain, but the broader opportunity appears if Sola becomes the place where companies teach software how work gets done, assemble those capabilities into processes, and deploy them across the organization.
+          Together, these ideas explain why I find Sola more interesting than simply a better version of RPA. The immediate opportunity is to make a large body of existing automation easier to create and maintain, but the broader opportunity appears if Sola becomes the place where companies teach software how work gets done, assemble those capabilities into processes, and deploy them across the organization.
         </p>
         <div style="margin-top:38px;font-weight:bold;font-size:21px">
           THE ECONOMICS OF AUTOMATION
@@ -114,7 +114,7 @@
           One possibility is to give the demonstration a small amount of semantic context before it begins. The operator might describe the desired outcome in ordinary language. For instance, apply every payment in this file to the corresponding invoice, verify whether this carrier is eligible to take a shipment, or upload the proof of delivery and close the completed load. That statement gives the actions that follow a frame. The recording is no longer only a trace of what happened on the screen but instead becomes evidence about how a particular business outcome is achieved.
         </p>
         <p>
-          Multiple demonstrations can make that evidence richer. A single example shows how one case was handled, while several examples begin to reveal what persists and what varies. An exception shown deliberately may reveal more about the boundaries of the process than another repetition of the happy path. Two operators completing the same job differently may expose which actions are essential and which merely reflect individual habit.
+          Multiple demonstrations can make that evidence richer. A single example shows how one case was handled, while several examples begin to reveal what persists and what varies. An exception shown deliberately might reveal more about the boundaries of the process than another repetition of the happy path. Two operators completing the same job differently may expose which actions are essential and which merely reflect individual habit.
         </p>
         <p>
           Any remaining uncertainty can then be handled selectively. If Sola understands nearly all of a process but remains unsure why one record was excluded or whether a particular check should occur every time, it can ask about those moments rather than forcing the user to inspect the entire workflow. The user’s job begins to shift from building the automation toward correcting Sola’s understanding of the process.
@@ -126,7 +126,7 @@
           A second opportunity appears as the number of automations inside one company grows. The first few workflows can reasonably be treated as independent objects. The hundredth makes that assumption more expensive because processes inside the same organization repeatedly rely on the same systems, rules, and operational capabilities.
         </p>
         <p>
-          Consider a logistics company where dozens of workflows interact with the same transportation management system. One might upload proof-of-delivery documents, another close completed loads, another retrieve shipment information, and another update billing records. Each could rely on some version of the same underlying actions: authenticate into the TMS, find the relevant load, retrieve information, update a record, and verify that the change succeeded.
+          Consider a logistics company where dozens of workflows interact with the same transportation management system. One might upload proof-of-delivery documents, another close completed loads, another retrieve shipment information, and another update billing records. Each could rely on some version of the same underlying actions, such as authenticating into the TMS, finding the relevant load, retrieving information, updating a record, and verifying that the change succeeded.
         </p>
         <p>
           If every workflow independently implements those behaviors, automation creates duplication alongside leverage. A change to the TMS can require many workflows to rediscover the same fix, while every new automation has to rebuild capabilities the organization already possesses elsewhere.
@@ -135,7 +135,7 @@
           The alternative is to let repeated behavior become a shared primitive. <em>Authenticate to TMS</em>, <em>Find Load</em>, <em>Verify Carrier</em>, or <em>Post Payment</em> can begin to look less like copied pieces of individual workflows and more like reusable capabilities available across the company.
         </p>
         <p>
-          This changes the economics of both creation and maintenance. A new automation can be assembled partly from capabilities the organization has already taught Sola, which shortens the path from demonstration to deployment. If the underlying system changes, the shared primitive could be repaired once and the dependent workflows could inherit the improvement, provided the product can make those dependencies visible and test that the change preserves the intended behavior downstream.
+          This changes the economics of both creation and maintenance. A new automation can be assembled partly from capabilities the organization has already taught Sola, which shortens the path from demonstration to deployment. If the underlying system changes, the shared primitive could be repaired once, and the dependent workflows could inherit the improvement, provided the product can make those dependencies visible and test that the change preserves the intended behavior downstream.
         </p>
         <p>
           The same logic can extend beyond mechanical interactions. A company may have a standard way to verify a carrier, interpret a particular document, reconcile a payment, approve an expense, or escalate an exception. Once represented cleanly enough, these could become part of a shared vocabulary from which future automations are composed.
@@ -144,31 +144,25 @@
           Over time, Sola could begin to accumulate a reusable library of how the organization gets work done. Each new workflow could draw from that library while also contributing new capabilities back into it. The marginal automation becomes easier to build because more of the company’s operational knowledge already exists as software.
         </p>
         <div style="margin-top:38px;font-weight:bold;font-size:21px">
-          WHAT HAPPENS AFTER AUTOMATION SCARCITY
+          WHEN AUTOMATION BECOMES THE DEFAULT
+        </div>
+        <div style="margin-top:38px;font-weight:bold;font-size:21px">
+          THE DEFAULT FOR REPETITIVE WORK
         </div>
         <p>
-          This brings the argument back to the workflows Wu and Deshmukh encountered before Sola. What is striking is not merely that finance and healthcare still depend on old software, since that is true of most industries, but that organizations can contain large amounts of work that everyone understands to be repetitive, that employees perform reliably every day, and that software could theoretically reproduce, yet still find it economically rational to leave that work manual.
+          As automation becomes easier, repetitive work can begin to acquire a natural home.
         </p>
         <p>
-          This is automation scarcity. Traditional RPA reduced it for sufficiently valuable and sufficiently stable processes, but it also created an implicit economic threshold. A workflow had to consume enough labor, recur often enough, and justify enough implementation and maintenance effort to be worth turning into software. A large amount of operational work sits below that threshold.
+          Today, those tasks are scattered across teams, systems, and individual habits. One person reconciles payments, another checks a portal, another updates a customer record, and another closes out a shipment. Sola creates the possibility of bringing that work into a common layer, where processes can be taught once, run repeatedly, and improved over time.
         </p>
         <p>
-          Someone checks an external portal every Thursday. Someone downloads a report, changes three columns, and uploads it somewhere else. Someone copies information from an email into an internal system. Someone reconciles a spreadsheet at the end of every month. Someone knows that when a particular error appears, the right response is to check another system and try again. None of these tasks may justify a conventional automation project on its own, but together they constitute a substantial portion of how companies actually operate.
+          As more of an organization’s work moves through Sola, the product can become the natural starting point for the next process. Employees know where to turn when they encounter repetitive work, while the company gains a consistent place to capture how that work should happen and put it into production.
         </p>
         <p>
-          The larger opportunity appears if that threshold continues falling. A workflow that consumes five hours a week becomes worth automating, then one that consumes an hour, and eventually one that consumes fifteen minutes but occurs in hundreds of places across the organization. At some point the default can begin to invert. Instead of asking whether a process is important enough to deserve automation, the more natural question becomes why a person is still doing it.
+          This is the larger opportunity. Sola can become the default environment for repetitive operational work: the place where companies encode it, run it, maintain it, and progressively hand more of it to software.
         </p>
         <p>
-          Falling costs repeatedly create this effect elsewhere in computing. Cheap storage did not merely reduce the bill for information companies already intended to retain. It caused vastly more information to be stored. Likewise, cheap computation did not merely make existing applications less expensive. It made entirely new classes of software economically sensible.
-        </p>
-        <p>
-          Making automation effortless can do something similar for work. As the cost of turning a process into software falls, progressively smaller pieces of an organization can become executable, inspectable, reusable, and composable. Processes that historically existed as separate tasks can begin to look like components of a larger outcome. Ally has already reported Sola workflows spanning proof-of-delivery uploads, load close-outs, billing, accounts receivable and payable, compliance, and pricing.<sup><a href="#ref5">5</a></sup> These may be automated independently today, but from another perspective some of them can be understood as fragments of a larger job, such as taking a completed shipment from delivery through billing and payment.
-        </p>
-        <p>
-          The natural unit of delegation can therefore move upward over time. A company may begin by asking software to perform an individual task and eventually ask it to take responsibility for an operational outcome, using the capabilities, rules, and workflows the organization has accumulated underneath.
-        </p>
-        <p>
-          If that progression continues, automation itself may become less visible. Instead of treating automation as a technical initiative, companies can increasingly treat it as an ordinary way of handling repetitive work.
+          Over time, automation becomes less of a discrete initiative and more of the infrastructure through which the company operates.
         </p>
         <p>
           The first recording may only be the beginning.
