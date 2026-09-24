@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Sola and the Invisible Asymptote of Automation — Ronak Upadhyaya</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Why making automation effortless may expand the surface area of software.">
@@ -56,12 +57,11 @@
           Sola starts from a much more natural interface. Instead of asking someone to describe a process in the language of automation, it lets them begin by doing the work. A user records herself performing a task, and Sola uses language models and computer vision to turn those actions into a reusable workflow that can be reviewed, modified, tested, and deployed.<sup><a href="#ref3">3</a></sup>
         </p>
         <p>
-          There is something unusually powerful about recording as a distribution mechanism. The operator does not need to first learn how an automation platform represents loops, variables, branches, or interface elements before she can begin. She already knows how to perform the job, and recording allows that existing knowledge to become the starting point for software. This makes the original citizen-developer idea considerably more literal: expertise in the business process itself becomes enough to begin automating it.
+          There is something unusually powerful about recording as an authoring interface. The operator does not need to first learn how an automation platform represents loops, variables, branches, or interface elements before she can begin. She already knows how to perform the job, and recording allows that existing knowledge to become the starting point for software. This makes the original citizen-developer idea considerably more literal: expertise in the business process itself becomes enough to begin automating it.
         </p>
         <p>
           These ideas together explain why I find Sola more interesting than simply a better version of RPA. The immediate opportunity is to make a large body of existing automation easier to create and maintain, but the broader opportunity appears if Sola becomes the place where companies teach software how work gets done, assemble those capabilities into processes, deploy them across the organization, and manage the resulting digital workforce.
         </p>
-
         <div style="margin-top:38px;font-weight:bold;font-size:21px">
           FROM WORK TO SOFTWARE
         </div>
@@ -83,7 +83,6 @@
         <p>
           That pattern matters because automation has always contained an implicit economic threshold. A process consuming thousands of employee hours a year can justify substantial implementation effort. Something that takes an hour a week may never make it onto an automation roadmap, even if everyone involved agrees that a person should not have to keep doing it. Reducing the cost of creation therefore does more than make existing RPA projects cheaper. It expands the set of processes that become worth automating at all.
         </p>
-
         <div style="margin-top:38px;font-weight:bold;font-size:21px">
           THE INVISIBLE ASYMPTOTE
         </div>
@@ -91,7 +90,13 @@
           Eugene Wei used the phrase <em>invisible asymptote</em> to describe the hidden ceiling that eventually limits a product’s growth if it continues along its existing path. At Amazon, one of the earliest and most important asymptotes turned out to be shipping fees. Customers liked the underlying service, but their reluctance to pay for shipping constrained how frequently they were willing to use it. Identifying that ceiling gave Amazon a concrete problem around which years of product work could be organized.<sup><a href="#ref6">6</a></sup>
         </p>
         <p>
-          There is a useful way to invert Wei’s framing for process automation. Instead of beginning with the current product and asking what feature should come next, imagine the theoretical endpoint and work backward. What would automation look like if it became nearly effortless?
+          Process automation has a similar constraint. There is no shortage of repetitive work that could theoretically be automated. The limitation is that every additional process carries some cost to understand, translate into software, test, and maintain. At some point, the value of automating the next process is simply smaller than the effort required to automate it.
+        </p>
+        <p>
+          That is the invisible asymptote Sola is pushing against.
+        </p>
+        <p>
+          The useful thought experiment is therefore to imagine what happens as that constraint approaches zero. What would automation look like if translating human work into reliable software became nearly effortless?
         </p>
         <p>
           In the limit, every repetitive digital process that can reasonably be delegated to software is addressable. A user demonstrates the work once and receives a useful first draft immediately. The system understands enough of what was demonstrated to require very little additional configuration, while making the remaining uncertainty easy to resolve. The time between showing Sola a process and trusting the resulting automation approaches zero.
@@ -100,9 +105,8 @@
           Once deployed, ordinary variation creates almost no ordinary maintenance. A field moves, a document arrives in a slightly different form, or a page loads more slowly, and the workflow continues. Humans become involved when the business itself is ambiguous, when a policy changes, or when judgment genuinely adds value rather than whenever the environment deviates from the original example.
         </p>
         <p>
-          The asymptote is useful because it makes the direction legible. If the ideal product turns almost any repetitive process into reliable software with almost no translation or maintenance overhead, the product opportunities become easier to derive by asking what would make the next process cheaper to create, easier to trust, and simpler to compose with everything that already exists.
+          The asymptote is useful because it makes the product direction clearer. If the constraint is the effort required to turn the next process into reliable software, the question becomes straightforward: what would make that next process cheaper to create, easier to trust, and simpler to compose with everything that already exists?
         </p>
-
         <div style="margin-top:38px;font-weight:bold;font-size:21px">
           FROM DEMONSTRATION TO INTENT
         </div>
@@ -116,9 +120,8 @@
           Multiple demonstrations can make that evidence richer. A single example shows how one case was handled, while several examples begin to reveal what persists and what varies. An exception shown deliberately may reveal more about the boundaries of the process than another repetition of the happy path. Two operators completing the same job differently may expose which actions are essential and which merely reflect individual habit.
         </p>
         <p>
-          Any remaining uncertainty can be handled selectively. If Sola understands nearly all of a process but remains unsure why one record was excluded or whether a particular check should occur every time, those assumptions deserve more attention than the parts of the workflow that were inferred with high confidence. The interaction begins to move from constructing an automation toward correcting an understanding.
+          Any remaining uncertainty can then be handled selectively. If Sola understands nearly all of a process but remains unsure why one record was excluded or whether a particular check should occur every time, it can ask about those moments rather than forcing the user to inspect the entire workflow. The user’s job begins to shift from building the automation toward correcting Sola’s understanding of the process.
         </p>
-
         <div style="margin-top:38px;font-weight:bold;font-size:21px">
           FROM WORKFLOWS TO PRIMITIVES
         </div>
@@ -141,9 +144,8 @@
           The same logic can extend beyond mechanical interactions. A company may have a standard way to verify a carrier, interpret a particular document, reconcile a payment, approve an expense, or escalate an exception. Once represented cleanly enough, they can become part of a shared vocabulary from which future automations are composed.
         </p>
         <p>
-          Over time, this creates something more interesting than a library of bots. The product begins to accumulate a reusable representation of what the organization knows how to do. Each new workflow can draw from that representation, while also contributing new capabilities back into it. The marginal automation becomes easier to build because more of the company’s operational knowledge already exists as software.
+          Over time, Sola can begin to accumulate a reusable library of how the organization gets work done. Each new workflow can draw from that library while also contributing new capabilities back into it. The marginal automation becomes easier to build because more of the company’s operational knowledge already exists as software.
         </p>
-
         <div style="margin-top:38px;font-weight:bold;font-size:21px">
           WHAT HAPPENS AFTER AUTOMATION SCARCITY
         </div>
@@ -163,18 +165,17 @@
           Falling costs repeatedly create this effect elsewhere in computing. Cheap storage did not merely reduce the bill for information companies already intended to retain. It caused vastly more information to be stored. Likewise, cheap computation did not merely make existing applications less expensive. It made entirely new classes of software economically sensible.
         </p>
         <p>
-          Making automation effortless can do something similar for work. As the cost of turning a process into software falls, progressively smaller pieces of an organization can become executable, inspectable, reusable, and composable. Processes that historically existed as separate tasks can begin to look like components of a larger outcome. Proof-of-delivery uploads, load close-outs, invoicing, and cash application may initially be automated independently because that is how the company historically divided human work, but from another perspective they are fragments of one job: take a completed shipment all the way from delivery to cash.
+          Making automation effortless can do something similar for work. As the cost of turning a process into software falls, progressively smaller pieces of an organization can become executable, inspectable, reusable, and composable. Processes that historically existed as separate tasks can begin to look like components of a larger outcome. Proof-of-delivery uploads, load close-outs, invoicing, and cash application may initially be automated independently because that is how the company historically divided human work. From another perspective, however, they are fragments of one job: take a completed shipment all the way from delivery to cash.
         </p>
         <p>
           The natural unit of delegation can therefore move upward over time. A company may begin by asking software to perform an individual task and eventually ask it to take responsibility for an operational outcome, using the capabilities, rules, and workflows the organization has accumulated underneath.
         </p>
         <p>
-          If Sola becomes the default layer through which repetitive work turns into software, the category itself may start to disappear into the product. Automation stops feeling like a technical initiative and becomes an ordinary capability available to anyone who encounters work that should no longer require a person.
+          If that progression continues, automation itself may become less visible. Instead of treating automation as a technical initiative, companies can increasingly treat it as an ordinary way of handling repetitive work.
         </p>
         <p>
           The first recording may only be the beginning.
         </p>
-
         <div style="margin-top:45px;font-weight:bold;font-size:21px">
           REFERENCES
         </div>
