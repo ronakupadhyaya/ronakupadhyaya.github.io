@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Rowspace and the Economics of Institutional Memory — Ronak Upadhyaya</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="What changes when a financial firm can reason over everything it has learned.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ronakupadhyaya.github.io/rowspace.html">
+  <meta property="og:title" content="Rowspace and the Economics of Institutional Memory">
+  <meta property="og:description" content="What changes when a financial firm can reason over everything it has learned.">
+  <meta name="twitter:card" content="summary">
+  <style>
+  * {
+    font-family:'Alegreya Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  @media (max-width: 760px) {
+    .page { width:88% !important; }
+    .nav { flex-direction:column !important; align-items:flex-start !important; }
+    .nav p { margin:0 0 6px 0 !important; }
+    .nav ul { flex-wrap:wrap !important; margin:0 0 10px 0 !important; padding-left:0 !important; }
+    .nav ul li:first-child a { margin-left:0 !important; }
+  }
+  </style>
+</head>
+<body>
+  <div class="page" style="display:flex;flex-direction:column;margin:auto;width:50%">
+    <div class="nav" style="display:flex;flex-direction:row;font-size:14px;justify-content:space-between;">
+      <div>
+        <p>
+          <a href="index.html" style="text-decoration:none;color:#2f2f2f">Ronak Upadhyaya</a>
+        </p>
+      </div>
+      <ul style="display:flex;list-style-type:none">
+        <li><a href="index.html" style="margin-left:10px;margin-right:10px;text-decoration:none;color:#2f2f2f">About</a></li>
+        <li><a href="writing.html" style="margin-left:10px;margin-right:10px;text-decoration:none;color:#2f2f2f">Writing</a></li>
+        <li><a href="reading.html" style="margin-left:10px;margin-right:10px;text-decoration:none;color:#2f2f2f">Reading</a></li>
+        <li><a href="interests.html" style="margin-left:10px;margin-right:10px;text-decoration:none;color:#2f2f2f">Interests</a></li>
+      </ul>
+    </div>
+
+    <div style="display:flex;flex-direction:column;margin-bottom:40px">
+      <div style="margin-top:40px;font-weight:bold;font-size:25px">
+        ROWSPACE AND THE ECONOMICS OF INSTITUTIONAL MEMORY
+      </div>
+      <div style="font-size:16px;margin-top:8px;line-height:1.7;color:#666">
+        What changes when a financial firm can reason over everything it has learned
+      </div>
+
+      <div style="font-size:16px;margin-top:8px;line-height:1.7;color:#2f2f2f">
+        <p>
+          Before starting Rowspace, Yibo Ling spent much of his career making decisions with an uncomfortable constraint. He had led corporate development at Uber, served as CFO of Bird, become Chief Business Officer at Binance, and managed investment portfolios measured in the tens of billions of dollars. The problem was rarely a lack of information. Instead, Ling often knew that the information required to make a better decision existed somewhere, but there was too much of it to inspect before the decision had to be made. He later described the frustration as having “too many stones to turn over in too little time.”<sup><a href="#ref1">1</a></sup>
+        </p>
+
+        <p>
+          The arrival of ChatGPT made the constraint more obvious. Ling began testing the model on investment due diligence and found something surprising. The underlying intelligence was suddenly capable enough to be useful, but the product still failed when it did not have what he called “the right information in the right context.”<sup><a href="#ref2">2</a></sup> Financial institutions had spent decades accumulating precisely that context across investment memos, financial models, CRM notes, accounting systems, emails, portfolio reviews, and the judgment of the people who produced them. The problem was making enough of it available, coherent, and trustworthy at the moment a decision was being made.
+        </p>
+
+        <p>
+          Michael Manapat had approached the same problem from the opposite direction. He and Ling first met as graduate students at MIT. Manapat went on to run applied machine learning at Stripe, where fraud, credit, and forecasting systems had to make sense of messy financial information with little tolerance for error, and later became CTO of Notion as the company moved into AI. Emergence Capital’s Jake Saper says he and Manapat spent years walking around Noe Valley discussing companies they might build, repeatedly returning to investing as a domain where enormous amounts of valuable proprietary information remained stubbornly difficult to use.<sup><a href="#ref3">3</a></sup>
+        </p>
+
+        <p>
+          These two perspectives together explain why I find Rowspace more interesting than another AI research tool for investors. The immediate opportunity is to make a financial institution’s existing information considerably easier to use. The larger opportunity appears if the cost of consulting everything the institution has learned falls far enough that the amount of institutional knowledge worth bringing into a decision begins to change.
+        </p>
+
+        <div style="margin-top:38px;font-weight:bold;font-size:21px">
+          A PARTICULARLY GOOD WEDGE
+        </div>
+
+        <p>
+          Investment firms have an unusual relationship with information because some of their most valuable data is generated by the act of investing itself. Every company evaluated, every deal rejected, every underwriting model, every investment committee debate, and every portfolio review adds another piece to the firm’s understanding of the world. A partner who has evaluated 500 companies does not merely possess more information than someone who has evaluated 20. The partner has observed which apparent risks mattered, which promising patterns failed to repeat, and how similar situations resolved across several market cycles.
+        </p>
+
+        <p>
+          This history becomes more valuable as public information becomes easier to access. Frontier models can already synthesize earnings calls, filings, industry research, and other public sources with increasing sophistication, which means that access to the public record is unlikely to remain a durable source of differentiation. Manapat has argued that a firm’s advantage instead comes partly from its own approach: the proprietary knowledge it has accumulated and the particular way it interprets that knowledge.<sup><a href="#ref5">5</a></sup> Emergence makes the same point more explicitly, arguing that “public intelligence is commoditized” while institutional judgment is not.<sup><a href="#ref3">3</a></sup>
+        </p>
+
+        <p>
+          The problem is that this proprietary history was never designed to function as a coherent dataset. An investment memo might explain why a company looked attractive at entry, while the assumptions supporting that conclusion live in Excel, a partner’s objections sit in email, subsequent performance appears in an accounting system, and the eventual outcome is recorded somewhere else. Even when the relevant information can be found, two sources may define the same metric differently or reflect the company’s position at different moments in time.
+        </p>
+
+        <p>
+          Rowspace therefore begins below the conversational interface. Ling says the company starts with “the mess”: documents, models, ledgers, positions, CRM records, databases, and other systems that together constitute the firm’s history.<sup><a href="#ref1">1</a></sup> It then attempts to understand how the particular institution interprets that information, including which sources it trusts, how it reconciles discrepancies, what relationships matter, and which definitions apply in a particular context.
+        </p>
+
+        <p>
+          This distinction is easy to understate. Retrieval can tell you that three documents contain three different EBITDA figures. It cannot, by itself, tell you which addbacks apply under the covenant governing a particular credit agreement. Finding an old investment memo does not establish whether the company described in it is actually a useful precedent for the company being evaluated today. As Emergence puts it, “retrieval is not reasoning.”<sup><a href="#ref3">3</a></sup> The harder product is the layer that makes enough of the firm’s historical context coherent that models can reason over it without inheriting the contradictions of the underlying data.
+        </p>
+
+        <p>
+          Finance is a particularly strong wedge for building that layer because the decisions are consequential enough to justify the work. Rowspace says firms managing hundreds of billions to nearly a trillion dollars are already using the product, while Manapat told <em>Fortune</em> that roughly ten early customers were paying seven-figure annual contract values.<sup><a href="#ref2">2</a></sup><sup><a href="#ref3">3</a></sup> If better use of institutional context changes even one large capital allocation decision, the economic value can overwhelm the cost of the software.
+        </p>
+
+        <div style="margin-top:38px;font-weight:bold;font-size:21px">
+          WHEN HISTORY BECOMES CHEAP TO CONSULT
+        </div>
+
+        <p>
+          One of Rowspace’s customers is a private equity firm with roughly fifty years of investment history. In principle, every new deal the firm evaluates could benefit from those five decades of experience. In practice, reconstructing the relevant history would traditionally require finding comparable transactions, locating old investment memos and models, determining what the firm believed at the time, normalizing financial information produced decades apart, and then understanding what eventually happened.
+        </p>
+
+        <p>
+          The information already existed, but consulting all of it was expensive enough that most decisions could only draw on a fraction of the available record.
+        </p>
+
+        <p>
+          Manapat says the firm can now run every new deal against those fifty years of history, asking what it has done in similar situations, what the risks were, and what it should do now. He describes that kind of analysis as something that could not have been done before.<sup><a href="#ref5">5</a></sup> The speed matters less than the shape of the problem. Rowspace is not simply making an analysis that took three hours take ten minutes. In some cases, it is making an analysis cheap enough to perform when the analysis previously would not have happened at all.
+        </p>
+
+        <p>
+          This changes the economics of institutional knowledge. Every investment firm contains questions that are theoretically answerable but practically unasked because assembling the relevant context would take longer than the answer is worth. Which current portfolio company most closely resembles an investment that failed during the previous cycle? Which companies did the firm reject for similar reasons, and what subsequently happened to them? Which operating assumptions have historically proved least reliable in a particular sector? A sufficiently complete institutional memory reduces the cost of asking these questions.
+        </p>
+
+        <p>
+          Credit provides another version of the same idea. A portfolio manager may oversee hundreds of loans governed by different contractual terms while ratings, company fundamentals, and portfolio constraints continuously change. Rowspace describes monitoring when cushions tighten or ratings shift, identifying which positions matter, proposing trades that restore compliance, and tracing the recommendation back through the relevant credit research and CLO indentures.<sup><a href="#ref4">4</a></sup> The product is valuable because it can continuously inspect a decision space that would be prohibitively expensive for a person to reconstruct every time something changes.
+        </p>
+
+        <p>
+          The common thread is not faster search. It is that falling information costs allow more context to participate in more decisions. A question that once justified several days of research can become routine, while a relationship that no human would have thought to investigate can be surfaced because the marginal cost of checking it approaches zero.
+        </p>
+
+        <div style="margin-top:38px;font-weight:bold;font-size:21px">
+          FROM MEMORY TO DECISIONS
+        </div>
+
+        <p>
+          An investment firm does not create an edge by possessing more documents than its competitors. The valuable part is the interpretation layered on top of them. The experienced credit investor who has lived through several cycles knows which covenant deterioration tends to be noise and which deserves immediate attention. The private equity partner who has evaluated hundreds of management teams recognizes patterns that may be difficult to articulate but materially affect an underwriting decision.
+        </p>
+
+        <p>
+          Historically, much of this judgment has compounded inside individuals. A partner sees more situations, observes more outcomes, and gradually develops a richer internal model of the world. The institution benefits from that model while the person is in the room, but only part of it survives in the files left behind.
+        </p>
+
+        <p>
+          Rowspace is attempting to make more of that reasoning explicit. Emergence describes the ambition as allowing a firm to preserve not just documents but “decisions and the logic behind them.” Manapat imagines a firm that “never forgets,” where the workflows of an experienced investor can be multiplied and “judgment scales with the firm instead of being diluted.”<sup><a href="#ref3">3</a></sup>
+        </p>
+
+        <p>
+          That framing suggests a natural progression in the product. If Rowspace understands not only the information underlying an investment but the reasoning through which the firm interpreted it, a new investment thesis can become something more persistent than a memo prepared for committee. The system can preserve the assumptions that mattered at entry and continue comparing them with the evidence that arrives afterward.
+        </p>
+
+        <p>
+          Suppose a software investment depends on three beliefs: customer retention will remain high, gross margins will expand, and management will successfully move into larger enterprise accounts. Traditional portfolio monitoring might show that revenue missed plan or margins declined. A system that preserves the original thesis can ask the more consequential question: which part of the reason we made the investment is becoming less true?
+        </p>
+
+        <p>
+          The difference is subtle but important. Monitoring usually begins with what changed in the company. Thesis monitoring begins with what changed relative to what the investor believed.
+        </p>
+
+        <p>
+          The same infrastructure can make retrospective analysis considerably more useful. Manapat has said he was surprised by how little post-hoc analysis many investors conduct, in part because reconstructing what a firm believed several years earlier and comparing it with reality has historically required too much work.<sup><a href="#ref5">5</a></sup> Once the original reasoning and the subsequent performance already live in a connected system, the institution can ask which assumptions proved correct, which risks were identified but misweighted, and which factors repeatedly surprised the team.
+        </p>
+
+        <p>
+          Passed investments may be particularly interesting. A firm usually has much richer data about companies it owns than companies it rejected, even though rejected companies contain some of the best evidence about the quality of its judgment. If Rowspace preserves why the institution passed and can later reconnect that reasoning with what happened, the firm can begin asking whether the reasons it repeatedly says no are actually predictive.
+        </p>
+
+        <p>
+          The objective is not to reduce investing to an algorithm. Good decisions can produce bad outcomes, while poor decisions can be rescued by luck. The more useful product is one that makes the institution’s reasoning legible enough that experienced investors can learn not only from what happened, but from the relationship between what they believed and what happened next.
+        </p>
+
+        <div style="margin-top:38px;font-weight:bold;font-size:21px">
+          THE HIDDEN SURFACE AREA
+        </div>
+
+        <p>
+          There is a second-order effect here that may be even more important. The historical information Rowspace connects was created for purposes other than teaching an AI how the firm thinks. Investment memos were written to support decisions, models to underwrite companies, CRM entries to track relationships, and portfolio reports to explain current performance. The institution’s reasoning therefore has to be reconstructed indirectly from artifacts scattered across different systems.
+        </p>
+
+        <p>
+          A platform that participates in the decision process itself can begin creating a much cleaner record prospectively.
+        </p>
+
+        <p>
+          Every new investment can preserve the information available when the decision was made, the precedents that mattered, the assumptions that drove the thesis, the concerns that were raised, and how the view changed over time. Every portfolio review can remain connected to that original reasoning rather than becoming another presentation in a folder. Every eventual outcome can add another observation about where the institution’s judgment was well calibrated and where it was not.
+        </p>
+
+        <p>
+          This dataset does not really exist inside most firms today because no existing system has been responsible for representing the relationship between information, judgment, decision, and outcome. Rowspace initially derives value from organizing decades of historical knowledge, but repeated use can allow it to construct something more structured than the history it inherited.
+        </p>
+
+        <p>
+          The product opportunities follow from that structure. Portfolio monitoring can become monitoring of the assumptions behind the portfolio. Postmortems can become a normal part of the investment process rather than an occasional exercise. Investment committees can automatically receive the precedents most likely to challenge the current consensus. A firm’s accumulated record can reveal not only what it has invested in before, but where its own judgment tends to be strong and where it is systematically uncertain.
+        </p>
+
+        <p>
+          This is also where the product becomes harder to replace. A competing model can become more intelligent, and public financial information can become easier to synthesize, but neither automatically reproduces the record of how a particular institution reached thousands of decisions over time. The act of using Rowspace can itself make the underlying representation of the institution richer.
+        </p>
+
+        <p>
+          The first years of Rowspace may therefore be about recovering institutional memory. The later years can be about creating better institutional memory than the firm was capable of producing before.
+        </p>
+
+        <div style="margin-top:38px;font-weight:bold;font-size:21px">
+          WHAT HAPPENS AFTER FORGETTING
+        </div>
+
+        <p>
+          This brings the argument back to Ling’s original frustration. The striking thing about having “too many stones to turn over” is that nothing is necessarily missing. The old investment memo exists. The relevant model exists. Someone at the firm may have seen the same pattern fifteen years earlier. The problem is that assembling and interpreting all of those pieces before the decision has to be made is too expensive.
+        </p>
+
+        <p>
+          Rowspace begins by attacking that cost in a market well suited to the approach. The information is proprietary, the workflows recur, the decisions are economically consequential, and the historical record grows more valuable with time. This creates an unusually direct path from better information infrastructure to better decisions.
+        </p>
+
+        <p>
+          The larger opportunity appears if lowering the cost far enough changes how much of the institution’s experience is worth applying. Every new deal can consult a much larger body of precedent. Every investment committee can arrive with potential blind spots already surfaced. Every portfolio review can remain connected to the assumptions that justified the investment. Every exit or rejected deal can contribute another piece of evidence about the firm’s own decision-making.
+        </p>
+
+        <p>
+          Today, much of the advantage created by experience compounds inside the people who accumulate it. Rowspace’s thesis is that more of that advantage can compound inside the institution itself.
+        </p>
+
+        <p>
+          Manapat describes the aspiration as creating a firm that “never forgets.”<sup><a href="#ref3">3</a></sup> The more interesting question is what becomes possible once forgetting is no longer the constraint. If an investment firm can cheaply bring decades of accumulated experience into every consequential decision, institutional memory stops behaving like an archive and starts behaving like an active input into how the firm thinks.
+        </p>
+
+        <p>
+          Ling started with a world in which there were always more stones than there was time to turn over. Rowspace’s immediate value is making many more of them cheap enough to inspect.
+        </p>
+
+        <p>
+          If Rowspace becomes the layer through which an institution brings everything it has learned to bear on what it does next, searching the firm’s memory may only be the beginning.
+        </p>
+
+        <div style="margin-top:45px;font-weight:bold;font-size:21px">
+          REFERENCES
+        </div>
+
+        <ol style="font-size:14px;line-height:1.7;color:#555;padding-left:22px">
+          <li id="ref1" style="margin-bottom:10px">
+            Yibo Ling, LinkedIn profile summary. Ling describes managing investment portfolios in the tens of billions, being overwhelmed rather than underserved by data, and wanting a system capable of synthesizing information fragmented across financial systems.
+            <a href="https://www.linkedin.com/in/yibo-ling-2511a34/" target="_blank">LinkedIn</a>.
+          </li>
+
+          <li id="ref2" style="margin-bottom:10px">
+            Leo Schwartz,
+            <a href="https://fortune.com/2026/02/25/rowspace-sequoia-ai-financial-platform-private-equity-investment-venture-capital/" target="_blank">“Exclusive: AI financial platform Rowspace raises $50 million led by Sequoia to help investment firms take on messy data,”</a>
+            <em>Fortune</em>, February 25, 2026.
+          </li>
+
+          <li id="ref3" style="margin-bottom:10px">
+            Jake Saper,
+            <a href="https://www.emcap.com/thoughts/institutional-judgment-is-finances-last-unstructured-asset-why-were-backing-rowspace" target="_blank">“Institutional Judgment Is Finance’s Last Unstructured Asset: Why We’re Backing Rowspace,”</a>
+            Emergence Capital, February 25, 2026.
+          </li>
+
+          <li id="ref4" style="margin-bottom:10px">
+            Rowspace,
+            <a href="https://www.rowspace.ai/" target="_blank">product and company materials</a>,
+            including descriptions of private equity, crossover, and credit workflows and the company’s approach to mapping firm-specific data and reasoning.
+          </li>
+
+          <li id="ref5" style="margin-bottom:10px">
+            Michael Manapat, TBPN interview, February 25, 2026. Discussion of a private equity customer drawing on roughly fifty years of investment history, retrospective analysis, and Rowspace’s ability to make previously impractical analyses routine.
+            <a href="https://www.tbpndigest.com/story/2026-02-25/rowspace-raises-50m-to-help-asset-managers-unlock-proprietary-data-advantage-before-public-data-is-fully-commoditized-by-ai/transcript" target="_blank">Transcript</a>.
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
