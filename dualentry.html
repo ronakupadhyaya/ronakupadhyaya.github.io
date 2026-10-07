@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="utf-8">
+
   <title>DualEntry and the Reverse Wedge — Ronak Upadhyaya</title>
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Why rebuilding the general ledger might be the strongest foundation for rebuilding finance.">
   <meta name="robots" content="noindex, nofollow">
+
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://ronakupadhyaya.github.io/dualentry.html">
   <meta property="og:title" content="DualEntry and the Reverse Wedge">
-  <meta property="og:description" content="Why rebuilding the general ledger first may be the strongest foundation for rebuilding finance.">
+  <meta property="og:description" content="Why rebuilding the general ledger might be the strongest foundation for rebuilding finance.">
+
   <meta name="twitter:card" content="summary">
 
   <style>
-  * {
-    font-family:'Alegreya Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  }
+    * {
+      font-family:'Alegreya Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
 
-  @media (max-width: 760px) {
-    .page { width:88% !important; }
-    .nav { flex-direction:column !important; align-items:flex-start !important; }
-    .nav p { margin:0 0 6px 0 !important; }
-    .nav ul { flex-wrap:wrap !important; margin:0 0 10px 0 !important; padding-left:0 !important; }
-    .nav ul li:first-child a { margin-left:0 !important; }
-  }
+    @media (max-width: 760px) {
+      .page { width:88% !important; }
+      .nav { flex-direction:column !important; align-items:flex-start !important; }
+      .nav p { margin:0 0 6px 0 !important; }
+      .nav ul { flex-wrap:wrap !important; margin:0 0 10px 0 !important; padding-left:0 !important; }
+      .nav ul li:first-child a { margin-left:0 !important; }
+    }
   </style>
 </head>
 
@@ -66,7 +71,7 @@
         </p>
 
         <p>
-          This history explains why I find DualEntry more interesting than merely an AI-native version of NetSuite. The immediate opportunity is obvious enough: replace slow, expensive accounting software and automate much of the manual work finance teams perform inside it. The larger opportunity comes from the particular place DualEntry chose to start. Most modern finance companies begin with a workflow around the ERP. However, DualEntry began with the general ledger underneath them.
+          This history explains why I find DualEntry more interesting than merely an AI-native version of NetSuite. The immediate opportunity is legible enough: replace slow, expensive accounting software and automate much of the manual work finance teams perform inside it. The larger opportunity comes from the particular place DualEntry chose to start. Most modern finance companies begin with a workflow around the ERP. DualEntry began with the general ledger underneath them.
         </p>
 
         <div style="margin-top:38px;font-weight:bold;font-size:21px">
@@ -118,7 +123,7 @@
         </p>
 
         <p>
-          DualEntry can preserve deterministic software for common workflows while using more general building blocks for the edge cases that would previously have required another feature, integration, consultant, or spreadsheet. When customers independently construct the same workflow often enough, the company can then turn that pattern into a first-class product.<sup><a href="#ref4">4</a></sup>
+          The important qualification is that this does not eliminate the need for deterministic software. Finance is unusually intolerant of ambiguity, particularly as a workflow becomes frequent or consequential. Building from the right is therefore less interesting as a substitute for building product than as a way of discovering what product should exist. AI can absorb the long tail before every edge case deserves a dedicated interface; repeated behavior can then reveal which workflows should harden into reliable software.<sup><a href="#ref4">4</a></sup>
         </p>
 
         <p>
@@ -142,7 +147,7 @@
         </p>
 
         <p>
-          This does not mean every finance product collapses into the ERP. Specialized applications will continue to win where the workflow depends on a sufficiently distinct data model or operating context. However, the boundary becomes more interesting for categories whose primary job is to observe accounting state, decide what should happen next, and eventually write the result back to the ledger. If the system of record becomes capable enough to perform that loop itself, part of the reason for maintaining a separate application begins to disappear.
+          This does not mean every finance product collapses into the ERP. Specialized applications will continue to win where the workflow depends on a sufficiently distinct data model or operating context. A useful boundary test is whether a workflow forms a closed loop around financial state: its primary inputs come from the ledger, it determines what should happen next, and its output ultimately has to be written back to the ledger. The more completely a workflow fits that pattern, the stronger the argument that it eventually moves into the ERP itself.
         </p>
 
         <p>
@@ -158,7 +163,7 @@
         </p>
 
         <p>
-          Slash is a fintech company with more than $300 million in annual revenue, high transaction volumes, and the kind of complexity that would ordinarily imply a substantial finance organization. DualEntry says Slash now operates with a finance team of two while roughly 90% of previously manual tasks are automated. Victor Cardenas, its CEO, says that after the transition the company closed several open roles across accounting and FP&amp;A, while the remaining finance employee moved toward a more strategic leadership role.<sup><a href="#ref6">6</a></sup>
+          Slash is a fintech company with more than $300 million in annual revenue, high transaction volumes, and the kind of complexity that would ordinarily imply a substantial finance organization. DualEntry says Slash now operates with a finance team of two while roughly 90% of previously manual tasks are automated. Victor Cardenas, its CEO, says that after the transition the company closed several open roles across accounting and FP&amp;A, while its original finance lead moved toward a more strategic role.<sup><a href="#ref6">6</a></sup>
         </p>
 
         <p>
@@ -166,11 +171,11 @@
         </p>
 
         <p>
-          Vinod Khosla described the destination as an AI-native ERP that reduces the need for staffing and consultants while producing trial closes every day rather than treating month-end as a periodic reconstruction exercise. One DualEntry customer, Trillion Digital, says it moved from closing 15 days after month-end to closing on a daily basis.<sup><a href="#ref7">7</a></sup>
+          Vinod Khosla described the destination as an AI-native ERP that reduces the need for staffing and consultants while producing trial closes every day rather than treating month-end as a periodic reconstruction exercise. One DualEntry customer, Trillion Digital, says it moved from closing 15 days after month-end to closing within 24 hours of each day’s end.<sup><a href="#ref7">7</a>, <a href="#ref8">8</a></sup>
         </p>
 
         <p>
-          The books then become progressively less like a report finance periodically assembles and more like a financial state the company continuously maintains. The traditional ERP helps finance process the complexity created by the rest of the business. A sufficiently automated ERP can begin absorbing that complexity before it reaches the team at all.
+          The books then become less like a report finance periodically assembles and more like a financial state the company continuously maintains. The traditional ERP helps finance process the complexity created by the rest of the business. A sufficiently automated ERP can begin absorbing that complexity before it reaches the team at all.
         </p>
 
         <div style="margin-top:38px;font-weight:bold;font-size:21px">
@@ -190,11 +195,11 @@
         </p>
 
         <p>
-          This is why DualEntry’s strategy looks more ambitious than replacing NetSuite with faster software. The company begins with a painful and unusually defensible wedge because every sufficiently complex business eventually needs a trusted financial core, while its migration engine attacks the lock-in that historically prevented customers from changing that core. From there, “building from the right” creates a path to absorb workflows that would previously have required separate applications or bespoke implementation work, while the general ledger gives those workflows a shared representation of the business on which to operate.
+          Starting with the ledger gives DualEntry a trusted financial core; migration attacks the lock-in protecting that core; and building from the right creates a way to expand outward without reproducing decades of ERP functionality one feature at a time. As the intelligence of the core increases, more of the fragmented finance stack can potentially originate there as well.
         </p>
 
         <p>
-          The broader implication is that the finance stack becomes progressively less fragmented as the intelligence of the core increases. Close management, collections, reporting, treasury, planning, and other categories do not disappear, but more of their functionality can originate from one continuously updated financial system rather than from a collection of applications reconciling with one another after the fact. The ERP moves from being the place where finance records the work to the place where an increasing amount of the work is actually performed.
+          Close management, collections, reporting, treasury, planning, and other categories do not disappear, but more of their functionality can originate from one continuously updated financial system rather than from a collection of applications reconciling with one another after the fact. The ERP moves from being the place where finance records the work to the place where an increasing amount of the work is actually performed.
         </p>
 
         <p>
@@ -212,45 +217,51 @@
         <ol style="font-size:14px;line-height:1.7;color:#555;padding-left:22px">
           <li id="ref1" style="margin-bottom:10px">
             Contrary Research,
-            <a href="https://research.contrary.com/company/dualentry" target="_blank">“DualEntry.”</a>
+            <a href="https://research.contrary.com/company/dualentry" target="_blank" rel="noopener noreferrer">“DualEntry.”</a>
             Discussion of Benitago, the founders’ ERP implementation, the 3 a.m. migration episode, and DualEntry’s strategy around the general ledger.
           </li>
 
           <li id="ref2" style="margin-bottom:10px">
             Lightspeed Venture Partners,
-            <a href="https://lsvp.com/stories/the-death-of-the-legacy-erp-why-we-led-dualentrys-series-a/" target="_blank">“The Death of the Legacy ERP: Why We Led DualEntry’s Series A.”</a>
+            <a href="https://lsvp.com/stories/the-death-of-the-legacy-erp-why-we-led-dualentrys-series-a/" target="_blank" rel="noopener noreferrer">“The Death of the Legacy ERP: Why We Led DualEntry’s Series A.”</a>
           </li>
 
           <li id="ref3" style="margin-bottom:10px">
             DualEntry,
-            <a href="https://www.dualentry.com/implementation-and-migration" target="_blank">“Implementation &amp; Migration.”</a>
+            <a href="https://www.dualentry.com/implementation-and-migration" target="_blank" rel="noopener noreferrer">“Implementation &amp; Migration.”</a>
             Discussion of NextDay Migration, transaction-level history, sandbox migration, zero implementation fees, and implementation timelines.
           </li>
 
           <li id="ref4" style="margin-bottom:10px">
             Santiago Nestares,
-            <a href="https://www.dualentry.com/builders/building-from-the-right" target="_blank">“Building from the Right.”</a>
+            <a href="https://www.dualentry.com/builders/building-from-the-right" target="_blank" rel="noopener noreferrer">“Building from the Right.”</a>
             Discussion of general AI primitives, long-tail workflows, and converting repeated agent behavior into deterministic product functionality.
           </li>
 
           <li id="ref5" style="margin-bottom:10px">
             DualEntry,
-            <a href="https://www.dualentry.com/blog/tasks" target="_blank">Tasks</a>
+            <a href="https://www.dualentry.com/blog/tasks" target="_blank" rel="noopener noreferrer">“Meet DualEntry Tasks: A Better Surface to Run the Close”</a>
             and
-            <a href="https://www.dualentry.com/blog/introducing-the-dualentry-mcp-server" target="_blank">“Introducing the DualEntry MCP Server.”</a>
+            <a href="https://www.dualentry.com/blog/introducing-the-dualentry-mcp-server" target="_blank" rel="noopener noreferrer">“Introducing the DualEntry MCP Server.”</a>
             Discussion of ledger-connected workflows, Tasks, permissions, and read/write access to the accounting system.
           </li>
 
           <li id="ref6" style="margin-bottom:10px">
             DualEntry,
-            <a href="https://www.dualentry.com/customers/slash" target="_blank">Slash customer story.</a>
-            Discussion of finance-team size, transaction volume, and automation of previously manual finance work.
+            <a href="https://www.dualentry.com/customers/slash" target="_blank" rel="noopener noreferrer">Slash customer story.</a>
+            Discussion of finance-team size, transaction volume, open finance roles, and automation of previously manual work.
           </li>
 
           <li id="ref7" style="margin-bottom:10px">
             DualEntry,
-            <a href="https://www.dualentry.com/funding-announcement" target="_blank">Series A announcement.</a>
-            Discussion of continuous close, staffing and implementation economics, and customer outcomes.
+            <a href="https://www.dualentry.com/funding-announcement" target="_blank" rel="noopener noreferrer">Series A announcement.</a>
+            Discussion of continuous close and the staffing and implementation economics of an AI-native ERP.
+          </li>
+
+          <li id="ref8" style="margin-bottom:10px">
+            DualEntry,
+            <a href="https://www.dualentry.com/customers/trilliondigital" target="_blank" rel="noopener noreferrer">Trillion Digital customer story.</a>
+            Discussion of Trillion’s transition from a 15-day month-end close to closing within 24 hours of each day’s end.
           </li>
         </ol>
       </div>
